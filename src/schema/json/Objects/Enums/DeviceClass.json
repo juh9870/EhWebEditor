@@ -1,0 +1,60 @@
+{
+	"type": "enum",
+	"name": "DeviceClass",
+	"item": [
+		{
+			"name": "Accelerator"
+		},
+		{
+			"name": "Decoy"
+		},
+		{
+			"name": "EnergyShield"
+		},
+		{
+			"name": "Ghost"
+		},
+		{
+			"name": "GravityGenerator"
+		},
+		{
+			"name": "PartialShield"
+		},
+		{
+			"name": "PointDefense"
+		},
+		{
+			"name": "RepairBot"
+		},
+		{
+			"name": "Detonator"
+		},
+		{
+			"name": "Stealth"
+		},
+		{
+			"name": "Teleporter"
+		},
+		{
+			"name": "Brake"
+		},
+		{
+			"name": "SuperStealth"
+		},
+		{
+			"name": "Fortification"
+		},
+		{
+			"name": "ToxicWaste"
+		},
+		{
+			"name": "WormTail"
+		},
+		{
+			"name": "ClonningCenter"
+		},
+		{
+			"name": "TimeMachine"
+		}
+	]
+}

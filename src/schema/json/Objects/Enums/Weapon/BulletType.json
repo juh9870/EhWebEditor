@@ -1,0 +1,18 @@
+{
+	"type": "enum",
+	"name": "BulletType",
+	"item": [
+		{
+			"name": "Projectile"
+		},
+		{
+			"name": "Homing"
+		},
+		{
+			"name": "Static"
+		},
+		{
+			"name": "Continuous"
+		}
+	]
+}

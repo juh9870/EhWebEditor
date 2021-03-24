@@ -1,0 +1,18 @@
+{
+	"type": "enum",
+	"name": "BulletEffectType",
+	"item": [
+		{
+			"name": "None"
+		},
+		{
+			"name": "PlaySfx"
+		},
+		{
+			"name": "SpawnBullet"
+		},
+		{
+			"name": "Detonate"
+		}
+	]
+}

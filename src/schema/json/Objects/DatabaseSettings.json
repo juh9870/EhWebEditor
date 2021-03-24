@@ -1,0 +1,28 @@
+{
+	"name": "DatabaseSettings",
+	"type": "settings",
+	"typeid": "DatabaseSettings",
+	"member": [
+		{
+			"name": "DatabaseVersion",
+			"type": "int",
+			"minvalue": "1"
+		},
+		{
+			"name": "ModName",
+			"type": "string"
+		},
+		{
+			"name": "ModId",
+			"type": "string"
+		},
+		{
+			"name": "ModVersion",
+			"type": "int"
+		},
+		{
+			"name": "UnloadOriginalDatabase",
+			"type": "bool"
+		}
+	]
+}

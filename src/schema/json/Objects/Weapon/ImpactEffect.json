@@ -1,0 +1,28 @@
+{
+	"name": "ImpactEffect",
+	"type": "struct",
+	"member": [
+		{
+			"name": "Type",
+			"type": "enum",
+			"typeid": "ImpactEffectType"
+		},
+		{
+			"name": "DamageType",
+			"type": "enum",
+			"typeid": "DamageType"
+		},
+		{
+			"name": "Power",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "Factor",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"name": "QuestItem",
+	"type": "object",
+	"typeid": "QuestItem",
+	"member": [
+		{
+			"name": "Name",
+			"type": "string"
+		},
+		{
+			"name": "Description",
+			"type": "string"
+		},
+		{
+			"name": "Icon",
+			"type": "image",
+			"typeid": "ArtifactIcon"
+		},
+		{
+			"name": "Color",
+			"type": "color"
+		},
+		{
+			"name": "Price",
+			"type": "int",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		}
+	]
+}

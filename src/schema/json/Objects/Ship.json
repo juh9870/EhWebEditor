@@ -1,0 +1,111 @@
+{
+	"name": "Ship",
+	"type": "object",
+	"typeid": "Ship",
+	"member": [
+		{
+			"name": "ShipCategory",
+			"type": "enum",
+			"typeid": "ShipCategory"
+		},
+		{
+			"name": "Name",
+			"type": "string"
+		},
+		{
+			"name": "Faction",
+			"type": "object",
+			"typeid": "Faction"
+		},
+		{
+			"name": "SizeClass",
+			"type": "enum",
+			"typeid": "SizeClass"
+		},
+		{
+			"name": "IconImage",
+			"type": "image",
+			"typeid": "ShipIcon"
+		},
+		{
+			"name": "IconScale",
+			"type": "float",
+			"minvalue": "0.1",
+			"maxvalue": "100"
+		},
+		{
+			"name": "ModelImage",
+			"type": "image",
+			"typeid": "Ship"
+		},
+		{
+			"name": "ModelScale",
+			"type": "float",
+			"minvalue": "0.1",
+			"maxvalue": "100"
+		},
+		{
+			"name": "EnginePosition",
+			"type": "vector",
+			"options": "obsolete"
+		},
+		{
+			"name": "EngineColor",
+			"type": "color"
+		},
+		{
+			"name": "EngineSize",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1",
+			"options": "obsolete"
+		},
+		{
+			"name": "Engines",
+			"type": "struct_list",
+			"typeid": "Engine"
+		},
+		{
+			"name": "EnergyResistance",
+			"type": "float",
+			"minvalue": "-100",
+			"maxvalue": "100"
+		},
+		{
+			"name": "KineticResistance",
+			"type": "float",
+			"minvalue": "-100",
+			"maxvalue": "100"
+		},
+		{
+			"name": "HeatResistance",
+			"type": "float",
+			"minvalue": "-100",
+			"maxvalue": "100"
+		},
+		{
+			"name": "Regeneration",
+			"type": "bool"
+		},
+		{
+			"name": "BaseWeightModifier",
+			"type": "float",
+			"minvalue": "-0.9",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "BuiltinDevices",
+			"type": "object_list",
+			"typeid": "Device"
+		},
+		{
+			"name": "Layout",
+			"type": "layout"
+		},
+		{
+			"name": "Barrels",
+			"type": "struct_list",
+			"typeid": "Barrel"
+		}
+	]
+}

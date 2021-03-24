@@ -1,0 +1,1657 @@
+{
+	"ActivationType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "None",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Manual",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Mixed",
+				"value": 2
+			}
+		],
+		"type": "integer"
+	},
+	"AmmunitionClassObsolete": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Common",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Acid",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Aura",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Carrier",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "Bomb",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "DamageOverTime",
+				"value": 5
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneControl",
+				"value": 6
+			},
+			{
+				"parent": "[circular]",
+				"name": "Emp",
+				"value": 7
+			},
+			{
+				"parent": "[circular]",
+				"name": "EmpMissile",
+				"value": 8
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyBeam",
+				"value": 9
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergySiphon",
+				"value": 10
+			},
+			{
+				"parent": "[circular]",
+				"name": "Explosion",
+				"value": 11
+			},
+			{
+				"parent": "[circular]",
+				"name": "Fireworks",
+				"value": 12
+			},
+			{
+				"parent": "[circular]",
+				"name": "FragBomb",
+				"value": 13
+			},
+			{
+				"parent": "[circular]",
+				"name": "Fragment",
+				"value": 14
+			},
+			{
+				"parent": "[circular]",
+				"name": "HomingImmobilizer",
+				"value": 15
+			},
+			{
+				"parent": "[circular]",
+				"name": "HomingTorpedo",
+				"value": 16
+			},
+			{
+				"parent": "[circular]",
+				"name": "Immobilizer",
+				"value": 17
+			},
+			{
+				"parent": "[circular]",
+				"name": "LaserBeam",
+				"value": 18
+			},
+			{
+				"parent": "[circular]",
+				"name": "Rocket",
+				"value": 19
+			},
+			{
+				"parent": "[circular]",
+				"name": "Singularity",
+				"value": 20
+			},
+			{
+				"parent": "[circular]",
+				"name": "TractorBeam",
+				"value": 21
+			},
+			{
+				"parent": "[circular]",
+				"name": "VampiricRay",
+				"value": 22
+			},
+			{
+				"parent": "[circular]",
+				"name": "SmallVampiricRay",
+				"value": 23
+			},
+			{
+				"parent": "[circular]",
+				"name": "RepairRay",
+				"value": 24
+			},
+			{
+				"parent": "[circular]",
+				"name": "PlasmaWeb",
+				"value": 25
+			},
+			{
+				"parent": "[circular]",
+				"name": "UnguidedRocket",
+				"value": 26
+			},
+			{
+				"parent": "[circular]",
+				"name": "IonBeam",
+				"value": 27
+			},
+			{
+				"parent": "[circular]",
+				"name": "AcidRocket",
+				"value": 28
+			},
+			{
+				"parent": "[circular]",
+				"name": "BlackHole",
+				"value": 29
+			},
+			{
+				"parent": "[circular]",
+				"name": "ClusterMissile",
+				"value": 30
+			},
+			{
+				"parent": "[circular]",
+				"name": "HomingCarrier",
+				"value": 31
+			}
+		],
+		"type": "integer"
+	},
+	"Availability": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "None",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Common",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Rare",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Special",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "Hidden",
+				"value": 4
+			}
+		],
+		"type": "integer"
+	},
+	"CellType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Empty",
+				"value": "0"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Weapon",
+				"value": "4"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Outer",
+				"value": "1"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Inner",
+				"value": "2"
+			},
+			{
+				"parent": "[circular]",
+				"name": "InnerOuter",
+				"value": "3"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Engine",
+				"value": "5"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Custom",
+				"value": "*"
+			}
+		],
+		"type": "string"
+	},
+	"ComponentCategory": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Undefined",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Weapon",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Defense",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Energy",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "Engine",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "Drones",
+				"value": 5
+			},
+			{
+				"parent": "[circular]",
+				"name": "Special",
+				"value": 6
+			}
+		],
+		"type": "integer"
+	},
+	"ComponentModType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Empty",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Lightweight",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "LowEnergyCost",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Fortified",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "ExtraHitPoints",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "Damage",
+				"value": 5
+			},
+			{
+				"parent": "[circular]",
+				"name": "Cooldown",
+				"value": 6
+			},
+			{
+				"parent": "[circular]",
+				"name": "Range",
+				"value": 7
+			},
+			{
+				"parent": "[circular]",
+				"name": "BulletVelocity",
+				"value": 8
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyCapacity",
+				"value": 9
+			},
+			{
+				"parent": "[circular]",
+				"name": "RepairRate",
+				"value": 10
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnginePower",
+				"value": 11
+			},
+			{
+				"parent": "[circular]",
+				"name": "RechargeRate",
+				"value": 12
+			},
+			{
+				"parent": "[circular]",
+				"name": "BulletVelocity2",
+				"value": 13
+			},
+			{
+				"parent": "[circular]",
+				"name": "AreaOfEffect",
+				"value": 14
+			},
+			{
+				"parent": "[circular]",
+				"name": "ShieldPower",
+				"value": 15
+			},
+			{
+				"parent": "[circular]",
+				"name": "Damage2",
+				"value": 16
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneDamage",
+				"value": 17
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneDefense",
+				"value": 18
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneSpeed",
+				"value": 19
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneRange",
+				"value": 20
+			},
+			{
+				"parent": "[circular]",
+				"name": "Recoil",
+				"value": 21
+			}
+		],
+		"type": "integer"
+	},
+	"ComponentStatsType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "PerComponent",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "PerOneCell",
+				"value": 1
+			}
+		],
+		"type": "integer"
+	},
+	"DeviceClass": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Accelerator",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Decoy",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyShield",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Ghost",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "GravityGenerator",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "PartialShield",
+				"value": 5
+			},
+			{
+				"parent": "[circular]",
+				"name": "PointDefense",
+				"value": 6
+			},
+			{
+				"parent": "[circular]",
+				"name": "RepairBot",
+				"value": 7
+			},
+			{
+				"parent": "[circular]",
+				"name": "Detonator",
+				"value": 8
+			},
+			{
+				"parent": "[circular]",
+				"name": "Stealth",
+				"value": 9
+			},
+			{
+				"parent": "[circular]",
+				"name": "Teleporter",
+				"value": 10
+			},
+			{
+				"parent": "[circular]",
+				"name": "Brake",
+				"value": 11
+			},
+			{
+				"parent": "[circular]",
+				"name": "SuperStealth",
+				"value": 12
+			},
+			{
+				"parent": "[circular]",
+				"name": "Fortification",
+				"value": 13
+			},
+			{
+				"parent": "[circular]",
+				"name": "ToxicWaste",
+				"value": 14
+			},
+			{
+				"parent": "[circular]",
+				"name": "WormTail",
+				"value": 15
+			},
+			{
+				"parent": "[circular]",
+				"name": "ClonningCenter",
+				"value": 16
+			},
+			{
+				"parent": "[circular]",
+				"name": "TimeMachine",
+				"value": 17
+			}
+		],
+		"type": "integer"
+	},
+	"DifficultyClass": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Default",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Class1",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Class2",
+				"value": 2
+			}
+		],
+		"type": "integer"
+	},
+	"ItemType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Undefined",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Component",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Device",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Weapon",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "AmmunitionObsolete",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneBay",
+				"value": 5
+			},
+			{
+				"parent": "[circular]",
+				"name": "Ship",
+				"value": 6
+			},
+			{
+				"parent": "[circular]",
+				"name": "Satellite",
+				"value": 7
+			},
+			{
+				"parent": "[circular]",
+				"name": "ShipBuild",
+				"value": 8
+			},
+			{
+				"parent": "[circular]",
+				"name": "SatelliteBuild",
+				"value": 9
+			},
+			{
+				"parent": "[circular]",
+				"name": "Technology",
+				"value": 10
+			},
+			{
+				"parent": "[circular]",
+				"name": "ComponentStats",
+				"value": 11
+			},
+			{
+				"parent": "[circular]",
+				"name": "ComponentMod",
+				"value": 12
+			},
+			{
+				"parent": "[circular]",
+				"name": "Skill",
+				"value": 13
+			},
+			{
+				"parent": "[circular]",
+				"name": "Faction",
+				"value": 14
+			},
+			{
+				"parent": "[circular]",
+				"name": "Quest",
+				"value": 15
+			},
+			{
+				"parent": "[circular]",
+				"name": "Loot",
+				"value": 16
+			},
+			{
+				"parent": "[circular]",
+				"name": "Fleet",
+				"value": 18
+			},
+			{
+				"parent": "[circular]",
+				"name": "Character",
+				"value": 19
+			},
+			{
+				"parent": "[circular]",
+				"name": "QuestItem",
+				"value": 20
+			},
+			{
+				"parent": "[circular]",
+				"name": "Ammunition",
+				"value": 25
+			},
+			{
+				"parent": "[circular]",
+				"name": "VisualEffect",
+				"value": 26
+			},
+			{
+				"parent": "[circular]",
+				"name": "BulletPrefab",
+				"value": 27
+			},
+			{
+				"parent": "[circular]",
+				"name": "ShipSettings",
+				"value": 100
+			},
+			{
+				"parent": "[circular]",
+				"name": "GalaxySettings",
+				"value": 101
+			},
+			{
+				"parent": "[circular]",
+				"name": "DatabaseSettings",
+				"value": 102
+			},
+			{
+				"parent": "[circular]",
+				"name": "ExplorationSettings",
+				"value": 103
+			}
+		],
+		"type": "integer"
+	},
+	"ModificationQuality": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "N3",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "N2",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "N1",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "P1",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "P2",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "P3",
+				"value": 5
+			}
+		],
+		"type": "integer"
+	},
+	"PlatformType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Common",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "AutoTarget",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "AutoTargetFrontal",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "TargetingUnit",
+				"value": 3
+			}
+		],
+		"type": "integer"
+	},
+	"FactionFilterType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "AllButList",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "ListOnly",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "StarOwnersAndList",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "AllAvailable",
+				"value": 3
+			}
+		],
+		"type": "integer"
+	},
+	"LootItemType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "None",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "SomeMoney",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Fuel",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Money",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "Stars",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "StarMap",
+				"value": 5
+			},
+			{
+				"parent": "[circular]",
+				"name": "RandomComponents",
+				"value": 10
+			},
+			{
+				"parent": "[circular]",
+				"name": "RandomItems",
+				"value": 20
+			},
+			{
+				"parent": "[circular]",
+				"name": "AllItems",
+				"value": 21
+			},
+			{
+				"parent": "[circular]",
+				"name": "ItemsWithChance",
+				"value": 22
+			},
+			{
+				"parent": "[circular]",
+				"name": "QuestItem",
+				"value": 25
+			},
+			{
+				"parent": "[circular]",
+				"name": "Ship",
+				"value": 30
+			},
+			{
+				"parent": "[circular]",
+				"name": "EmptyShip",
+				"value": 31
+			},
+			{
+				"parent": "[circular]",
+				"name": "Component",
+				"value": 35
+			}
+		],
+		"type": "integer"
+	},
+	"NodeType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Undefined",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "ComingSoon",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "ShowDialog",
+				"value": 10
+			},
+			{
+				"parent": "[circular]",
+				"name": "OpenShipyard",
+				"value": 11
+			},
+			{
+				"parent": "[circular]",
+				"name": "Switch",
+				"value": 15
+			},
+			{
+				"parent": "[circular]",
+				"name": "Random",
+				"value": 16
+			},
+			{
+				"parent": "[circular]",
+				"name": "Condition",
+				"value": 17
+			},
+			{
+				"parent": "[circular]",
+				"name": "AttackFleet",
+				"value": 20
+			},
+			{
+				"parent": "[circular]",
+				"name": "AttackOccupants",
+				"value": 21
+			},
+			{
+				"parent": "[circular]",
+				"name": "DestroyOccupants",
+				"value": 25
+			},
+			{
+				"parent": "[circular]",
+				"name": "SuppressOccupants",
+				"value": 26
+			},
+			{
+				"parent": "[circular]",
+				"name": "Retreat",
+				"value": 30
+			},
+			{
+				"parent": "[circular]",
+				"name": "ReceiveItem",
+				"value": 35
+			},
+			{
+				"parent": "[circular]",
+				"name": "RemoveItem",
+				"value": 36
+			},
+			{
+				"parent": "[circular]",
+				"name": "Trade",
+				"value": 37
+			},
+			{
+				"parent": "[circular]",
+				"name": "CompleteQuest",
+				"value": 40
+			},
+			{
+				"parent": "[circular]",
+				"name": "FailQuest",
+				"value": 41
+			},
+			{
+				"parent": "[circular]",
+				"name": "CancelQuest",
+				"value": 42
+			},
+			{
+				"parent": "[circular]",
+				"name": "StartQuest",
+				"value": 43
+			},
+			{
+				"parent": "[circular]",
+				"name": "SetCharacterRelations",
+				"value": 50
+			},
+			{
+				"parent": "[circular]",
+				"name": "SetFactionRelations",
+				"value": 51
+			},
+			{
+				"parent": "[circular]",
+				"name": "ChangeCharacterRelations",
+				"value": 55
+			},
+			{
+				"parent": "[circular]",
+				"name": "ChangeFactionRelations",
+				"value": 56
+			}
+		],
+		"type": "integer"
+	},
+	"QuestType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Common",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Singleton",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Storyline",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Temporary",
+				"value": 3
+			}
+		],
+		"type": "integer"
+	},
+	"RequiredViewMode": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Any",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "StarSystem",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "StarMap",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "GalaxyMap",
+				"value": 3
+			}
+		],
+		"type": "integer"
+	},
+	"RequirementType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Empty",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Any",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "All",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "None",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "PlayerPosition",
+				"value": 6
+			},
+			{
+				"parent": "[circular]",
+				"name": "RandomStarSystem",
+				"value": 7
+			},
+			{
+				"parent": "[circular]",
+				"name": "AggressiveOccupants",
+				"value": 8
+			},
+			{
+				"parent": "[circular]",
+				"name": "QuestCompleted",
+				"value": 9
+			},
+			{
+				"parent": "[circular]",
+				"name": "QuestActive",
+				"value": 10
+			},
+			{
+				"parent": "[circular]",
+				"name": "CharacterRelations",
+				"value": 15
+			},
+			{
+				"parent": "[circular]",
+				"name": "FactionRelations",
+				"value": 16
+			},
+			{
+				"parent": "[circular]",
+				"name": "Faction",
+				"value": 20
+			},
+			{
+				"parent": "[circular]",
+				"name": "HaveQuestItem",
+				"value": 25
+			},
+			{
+				"parent": "[circular]",
+				"name": "HaveItem",
+				"value": 26
+			},
+			{
+				"parent": "[circular]",
+				"name": "HaveItemById",
+				"value": 27
+			},
+			{
+				"parent": "[circular]",
+				"name": "ComeBack",
+				"value": 30
+			}
+		],
+		"type": "integer"
+	},
+	"RewardCondition": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Default",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Always",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Never",
+				"value": 2
+			}
+		],
+		"type": "integer"
+	},
+	"StartCondition": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Manual",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Beacon",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "LocalEncounter",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "FactionMission",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "GameStart",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "NewStarExplored",
+				"value": 5
+			},
+			{
+				"parent": "[circular]",
+				"name": "ArrivedAtStar",
+				"value": 6
+			}
+		],
+		"type": "integer"
+	},
+	"ShipCategory": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Common",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Rare",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Flagship",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Special",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "Starbase",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "Hidden",
+				"value": 5
+			},
+			{
+				"parent": "[circular]",
+				"name": "Drone",
+				"value": 6
+			}
+		],
+		"type": "integer"
+	},
+	"SizeClass": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Undefined",
+				"value": -1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Frigate",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Destroyer",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Cruiser",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Battleship",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "Titan",
+				"value": 4
+			}
+		],
+		"type": "integer"
+	},
+	"SkillType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Undefined",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Blueprint",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Ship",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "ShipAttack",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "ShipDefense",
+				"value": 5
+			},
+			{
+				"parent": "[circular]",
+				"name": "StarbaseAttack",
+				"value": 6
+			},
+			{
+				"parent": "[circular]",
+				"name": "StarbaseDefense",
+				"value": 7
+			},
+			{
+				"parent": "[circular]",
+				"name": "BetterPrices",
+				"value": 10
+			},
+			{
+				"parent": "[circular]",
+				"name": "BetterLoot",
+				"value": 12
+			}
+		],
+		"type": "integer"
+	},
+	"TechType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Component",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Ship",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Satellite",
+				"value": 2
+			}
+		],
+		"type": "integer"
+	},
+	"BulletEffectType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "None",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "PlaySfx",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "SpawnBullet",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Detonate",
+				"value": 3
+			}
+		],
+		"type": "integer"
+	},
+	"BulletImpactType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "HitFirstTarget",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "HitAllTargets",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "DamageOverTime",
+				"value": 2
+			}
+		],
+		"type": "integer"
+	},
+	"BulletShape": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Projectile",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Rocket",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "LaserBeam",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "LightningBolt",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyBeam",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "Spark",
+				"value": 5
+			},
+			{
+				"parent": "[circular]",
+				"name": "Mine",
+				"value": 6
+			}
+		],
+		"type": "integer"
+	},
+	"BulletTriggerCondition": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Undefined",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Created",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Destroyed",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Hit",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "Disarmed",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "Expired",
+				"value": 5
+			},
+			{
+				"parent": "[circular]",
+				"name": "Detonated",
+				"value": 6
+			},
+			{
+				"parent": "[circular]",
+				"name": "OutOfAmmo",
+				"value": 7
+			}
+		],
+		"type": "integer"
+	},
+	"BulletType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Projectile",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Homing",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Static",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Continuous",
+				"value": 3
+			}
+		],
+		"type": "integer"
+	},
+	"ColorMode": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "TakeFromOwner",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "UseMyOwn",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Blend",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Multiply",
+				"value": 3
+			}
+		],
+		"type": "integer"
+	},
+	"DamageType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Impact",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Energy",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Heat",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Direct",
+				"value": 3
+			}
+		],
+		"type": "integer"
+	},
+	"ImpactEffectType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Push",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Pull",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "DrainEnergy",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "SiphonHitPoints",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "SlowDown",
+				"value": 5
+			},
+			{
+				"parent": "[circular]",
+				"name": "CaptureDrones",
+				"value": 6
+			},
+			{
+				"parent": "[circular]",
+				"name": "Repair",
+				"value": 7
+			}
+		],
+		"type": "integer"
+	},
+	"VisualEffectType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Flash",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "FlashAdditive",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Shockwave",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "Smoke",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "SmokeAdditive",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "Shake",
+				"value": 5
+			}
+		],
+		"type": "integer"
+	},
+	"WeaponClass": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Common",
+				"value": 0
+			},
+			{
+				"parent": "[circular]",
+				"name": "Manageable",
+				"value": 1
+			},
+			{
+				"parent": "[circular]",
+				"name": "Continuous",
+				"value": 2
+			},
+			{
+				"parent": "[circular]",
+				"name": "MashineGun",
+				"value": 3
+			},
+			{
+				"parent": "[circular]",
+				"name": "MultiShot",
+				"value": 4
+			},
+			{
+				"parent": "[circular]",
+				"name": "RequiredCharging",
+				"value": 5
+			}
+		],
+		"type": "integer"
+	},
+	"WeaponSlotType": {
+		"entries": [
+			{
+				"parent": "[circular]",
+				"name": "Default",
+				"value": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Cannon",
+				"value": "C"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Torpedo",
+				"value": "T"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Missile",
+				"value": "M"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Laser",
+				"value": "L"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Special",
+				"value": "S"
+			}
+		],
+		"type": "string"
+	}
+}

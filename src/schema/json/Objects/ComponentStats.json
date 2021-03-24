@@ -1,0 +1,183 @@
+{
+	"name": "ComponentStats",
+	"type": "object",
+	"typeid": "ComponentStats",
+	"member": [
+		{
+			"name": "Type",
+			"type": "enum",
+			"typeid": "ComponentStatsType"
+		},
+		{
+			"name": "ArmorPoints",
+			"type": "float",
+			"minvalue": "-1000000",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "ArmorRepairRate",
+			"type": "float",
+			"minvalue": "-1000000",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "ArmorRepairCooldownModifier",
+			"type": "float",
+			"minvalue": "-1",
+			"maxvalue": "1"
+		},
+		{
+			"name": "EnergyPoints",
+			"type": "float",
+			"minvalue": "-1000000",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "EnergyRechargeRate",
+			"type": "float",
+			"minvalue": "-1000000",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "EnergyRechargeCooldownModifier",
+			"type": "float",
+			"minvalue": "-5",
+			"maxvalue": "5"
+		},
+		{
+			"name": "ShieldPoints",
+			"type": "float",
+			"minvalue": "-1000000",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "ShieldRechargeRate",
+			"type": "float",
+			"minvalue": "-1000000",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "ShieldRechargeCooldownModifier",
+			"type": "float",
+			"minvalue": "-5",
+			"maxvalue": "5"
+		},
+		{
+			"name": "Weight",
+			"type": "float",
+			"minvalue": "-1000000",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "RammingDamage",
+			"type": "float",
+			"minvalue": "-1000000",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "EnergyAbsorption",
+			"type": "float",
+			"minvalue": "-1000000",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "KineticResistance",
+			"type": "float",
+			"minvalue": "-1000000",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "EnergyResistance",
+			"type": "float",
+			"minvalue": "-1000000",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "ThermalResistance",
+			"type": "float",
+			"minvalue": "-1000000",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "EnginePower",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "2000"
+		},
+		{
+			"name": "TurnRate",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "2000"
+		},
+		{
+			"name": "Autopilot",
+			"type": "bool"
+		},
+		{
+			"name": "DroneRangeModifier",
+			"type": "float",
+			"minvalue": "-50",
+			"maxvalue": "50"
+		},
+		{
+			"name": "DroneDamageModifier",
+			"type": "float",
+			"minvalue": "-50",
+			"maxvalue": "50"
+		},
+		{
+			"name": "DroneDefenseModifier",
+			"type": "float",
+			"minvalue": "-50",
+			"maxvalue": "50"
+		},
+		{
+			"name": "DroneSpeedModifier",
+			"type": "float",
+			"minvalue": "-50",
+			"maxvalue": "50"
+		},
+		{
+			"name": "DronesBuiltPerSecond",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "100"
+		},
+		{
+			"name": "DroneBuildTimeModifier",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "100"
+		},
+		{
+			"name": "WeaponFireRateModifier",
+			"type": "float",
+			"minvalue": "-100",
+			"maxvalue": "100"
+		},
+		{
+			"name": "WeaponDamageModifier",
+			"type": "float",
+			"minvalue": "-100",
+			"maxvalue": "100"
+		},
+		{
+			"name": "WeaponRangeModifier",
+			"type": "float",
+			"minvalue": "-100",
+			"maxvalue": "100"
+		},
+		{
+			"name": "WeaponEnergyCostModifier",
+			"type": "float",
+			"minvalue": "-100",
+			"maxvalue": "100"
+		},
+		{
+			"name": "AlterWeaponPlatform",
+			"type": "enum",
+			"typeid": "PlatformType"
+		}
+	]
+}

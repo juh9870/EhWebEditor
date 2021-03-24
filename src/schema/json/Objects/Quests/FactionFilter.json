@@ -1,0 +1,17 @@
+{
+	"name": "FactionFilter",
+	"type": "struct",
+	"alias": "RequiredFactions",
+	"member": [
+		{
+			"name": "Type",
+			"type": "enum",
+			"typeid": "FactionFilterType"
+		},
+		{
+			"name": "List",
+			"type": "object_list",
+			"typeid": "Faction"
+		}
+	]
+}

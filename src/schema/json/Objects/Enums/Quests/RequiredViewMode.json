@@ -1,0 +1,22 @@
+{
+	"type": "enum",
+	"name": "RequiredViewMode",
+	"item": [
+		{
+			"text": 0,
+			"name": "Any"
+		},
+		{
+			"text": 1,
+			"name": "StarSystem"
+		},
+		{
+			"text": 2,
+			"name": "StarMap"
+		},
+		{
+			"text": 3,
+			"name": "GalaxyMap"
+		}
+	]
+}

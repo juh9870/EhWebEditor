@@ -1,0 +1,23 @@
+{
+	"name": "NodeTransition",
+	"type": "struct",
+	"member": [
+		{
+			"name": "TargetNode",
+			"type": "int",
+			"minvalue": "1",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Requirement",
+			"type": "struct",
+			"typeid": "Requirement"
+		},
+		{
+			"name": "Weight",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		}
+	]
+}

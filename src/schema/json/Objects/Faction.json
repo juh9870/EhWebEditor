@@ -1,0 +1,35 @@
+{
+	"name": "Faction",
+	"type": "object",
+	"typeid": "Faction",
+	"member": [
+		{
+			"name": "Name",
+			"type": "string"
+		},
+		{
+			"name": "Color",
+			"type": "color"
+		},
+		{
+			"name": "HomeStarDistance",
+			"type": "int",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "WanderingShipsDistance",
+			"type": "int",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Hidden",
+			"type": "bool"
+		},
+		{
+			"name": "Hostile",
+			"type": "bool"
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"type": "enum",
+	"name": "SkillType",
+	"item": [
+		{
+			"text": 0,
+			"name": "Undefined"
+		},
+		{
+			"text": 1,
+			"name": "Blueprint"
+		},
+		{
+			"text": 2,
+			"name": "Ship"
+		},
+		{
+			"text": 4,
+			"name": "ShipAttack"
+		},
+		{
+			"text": 5,
+			"name": "ShipDefense"
+		},
+		{
+			"text": 6,
+			"name": "StarbaseAttack"
+		},
+		{
+			"text": 7,
+			"name": "StarbaseDefense"
+		},
+		{
+			"text": 10,
+			"name": "BetterPrices"
+		},
+		{
+			"text": 12,
+			"name": "BetterLoot"
+		}
+	]
+}

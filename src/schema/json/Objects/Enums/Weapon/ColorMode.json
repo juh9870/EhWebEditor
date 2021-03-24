@@ -1,0 +1,18 @@
+{
+	"type": "enum",
+	"name": "ColorMode",
+	"item": [
+		{
+			"name": "TakeFromOwner"
+		},
+		{
+			"name": "UseMyOwn"
+		},
+		{
+			"name": "Blend"
+		},
+		{
+			"name": "Multiply"
+		}
+	]
+}

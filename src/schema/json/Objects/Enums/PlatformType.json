@@ -1,0 +1,18 @@
+{
+	"type": "enum",
+	"name": "PlatformType",
+	"item": [
+		{
+			"name": "Common"
+		},
+		{
+			"name": "AutoTarget"
+		},
+		{
+			"name": "AutoTargetFrontal"
+		},
+		{
+			"name": "TargetingUnit"
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"name": "ComponentRestrictions",
+	"type": "struct",
+	"member": [
+		{
+			"name": "ShipSizes",
+			"type": "enum_flags",
+			"typeid": "SizeClass"
+		},
+		{
+			"name": "NotForOrganicShips",
+			"type": "bool"
+		},
+		{
+			"name": "NotForMechanicShips",
+			"type": "bool"
+		},
+		{
+			"name": "UniqueComponentTag",
+			"type": "string"
+		}
+	]
+}

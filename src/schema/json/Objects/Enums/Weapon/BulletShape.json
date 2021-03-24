@@ -1,0 +1,27 @@
+{
+	"type": "enum",
+	"name": "BulletShape",
+	"item": [
+		{
+			"name": "Projectile"
+		},
+		{
+			"name": "Rocket"
+		},
+		{
+			"name": "LaserBeam"
+		},
+		{
+			"name": "LightningBolt"
+		},
+		{
+			"name": "EnergyBeam"
+		},
+		{
+			"name": "Spark"
+		},
+		{
+			"name": "Mine"
+		}
+	]
+}

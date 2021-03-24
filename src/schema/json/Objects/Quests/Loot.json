@@ -1,0 +1,11 @@
+{
+	"name": "Loot",
+	"type": "object",
+	"typeid": "Loot",
+	"alias": "LootModel",
+	"member": {
+		"name": "Loot",
+		"type": "struct",
+		"typeid": "LootContent"
+	}
+}

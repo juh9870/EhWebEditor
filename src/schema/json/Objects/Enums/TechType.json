@@ -1,0 +1,15 @@
+{
+	"type": "enum",
+	"name": "TechType",
+	"item": [
+		{
+			"name": "Component"
+		},
+		{
+			"name": "Ship"
+		},
+		{
+			"name": "Satellite"
+		}
+	]
+}

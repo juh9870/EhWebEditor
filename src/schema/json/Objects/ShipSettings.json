@@ -1,0 +1,85 @@
+{
+	"name": "ShipSettings",
+	"type": "settings",
+	"typeid": "ShipSettings",
+	"member": [
+		{
+			"name": "DefaultWeightPerCell",
+			"type": "float",
+			"minvalue": "1",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "MinimumWeightPerCell",
+			"type": "float",
+			"minvalue": "1",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "BaseArmorPoints",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "ArmorPointsPerCell",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "ArmorRepairCooldown",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "60"
+		},
+		{
+			"name": "BaseEnergyPoints",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "BaseEnergyRechargeRate",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "EnergyRechargeCooldown",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "60"
+		},
+		{
+			"name": "BaseShieldRechargeRate",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000000"
+		},
+		{
+			"name": "ShieldRechargeCooldown",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "60"
+		},
+		{
+			"name": "BaseDroneReconstructionSpeed",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "100"
+		},
+		{
+			"name": "MaxVelocity",
+			"type": "float",
+			"minvalue": "5",
+			"maxvalue": "30"
+		},
+		{
+			"name": "MaxTurnRate",
+			"type": "float",
+			"minvalue": "5",
+			"maxvalue": "30"
+		}
+	]
+}

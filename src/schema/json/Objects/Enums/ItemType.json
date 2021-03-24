@@ -1,0 +1,114 @@
+{
+	"type": "enum",
+	"name": "ItemType",
+	"item": [
+		{
+			"text": 0,
+			"name": "Undefined"
+		},
+		{
+			"text": 1,
+			"name": "Component"
+		},
+		{
+			"text": 2,
+			"name": "Device"
+		},
+		{
+			"text": 3,
+			"name": "Weapon"
+		},
+		{
+			"text": 4,
+			"name": "AmmunitionObsolete"
+		},
+		{
+			"text": 5,
+			"name": "DroneBay"
+		},
+		{
+			"text": 6,
+			"name": "Ship"
+		},
+		{
+			"text": 7,
+			"name": "Satellite"
+		},
+		{
+			"text": 8,
+			"name": "ShipBuild"
+		},
+		{
+			"text": 9,
+			"name": "SatelliteBuild"
+		},
+		{
+			"text": 10,
+			"name": "Technology"
+		},
+		{
+			"text": 11,
+			"name": "ComponentStats"
+		},
+		{
+			"text": 12,
+			"name": "ComponentMod"
+		},
+		{
+			"text": 13,
+			"name": "Skill"
+		},
+		{
+			"text": 14,
+			"name": "Faction"
+		},
+		{
+			"text": 15,
+			"name": "Quest"
+		},
+		{
+			"text": 16,
+			"name": "Loot"
+		},
+		{
+			"text": 18,
+			"name": "Fleet"
+		},
+		{
+			"text": 19,
+			"name": "Character"
+		},
+		{
+			"text": 20,
+			"name": "QuestItem"
+		},
+		{
+			"text": 25,
+			"name": "Ammunition"
+		},
+		{
+			"text": 26,
+			"name": "VisualEffect"
+		},
+		{
+			"text": 27,
+			"name": "BulletPrefab"
+		},
+		{
+			"text": 100,
+			"name": "ShipSettings"
+		},
+		{
+			"text": 101,
+			"name": "GalaxySettings"
+		},
+		{
+			"text": 102,
+			"name": "DatabaseSettings"
+		},
+		{
+			"text": 103,
+			"name": "ExplorationSettings"
+		}
+	]
+}

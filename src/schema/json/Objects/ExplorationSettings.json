@@ -1,0 +1,27 @@
+{
+	"name": "ExplorationSettings",
+	"type": "settings",
+	"typeid": "ExplorationSettings",
+	"member": [
+		{
+			"name": "OutpostShip",
+			"type": "object",
+			"typeid": "Ship"
+		},
+		{
+			"name": "TurretShip",
+			"type": "object",
+			"typeid": "Ship"
+		},
+		{
+			"name": "InfectedPlanetFaction",
+			"type": "object",
+			"typeid": "Faction"
+		},
+		{
+			"name": "HiveShipBuild",
+			"type": "object",
+			"typeid": "ShipBuild"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"type": "enum",
+	"name": "ImpactEffectType",
+	"item": [
+		{
+			"name": "Damage"
+		},
+		{
+			"name": "Push"
+		},
+		{
+			"name": "Pull"
+		},
+		{
+			"name": "DrainEnergy"
+		},
+		{
+			"name": "SiphonHitPoints"
+		},
+		{
+			"name": "SlowDown"
+		},
+		{
+			"name": "CaptureDrones"
+		},
+		{
+			"name": "Repair"
+		}
+	]
+}

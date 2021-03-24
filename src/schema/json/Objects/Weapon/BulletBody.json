@@ -1,0 +1,70 @@
+{
+	"name": "BulletBody",
+	"type": "struct",
+	"member": [
+		{
+			"name": "Type",
+			"type": "enum",
+			"typeid": "BulletType"
+		},
+		{
+			"name": "Size",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Velocity",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Range",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "Lifetime",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "Weight",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "HitPoints",
+			"type": "int",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "Color",
+			"type": "color"
+		},
+		{
+			"name": "BulletPrefab",
+			"type": "object",
+			"typeid": "BulletPrefab"
+		},
+		{
+			"name": "EnergyCost",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "CanBeDisarmed",
+			"type": "bool"
+		},
+		{
+			"name": "FriendlyFire",
+			"type": "bool"
+		}
+	]
+}

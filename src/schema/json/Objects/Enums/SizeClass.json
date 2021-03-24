@@ -1,0 +1,30 @@
+{
+	"type": "enum",
+	"name": "SizeClass",
+	"item": [
+		{
+			"text": -1,
+			"name": "Undefined"
+		},
+		{
+			"text": 0,
+			"name": "Frigate"
+		},
+		{
+			"text": 1,
+			"name": "Destroyer"
+		},
+		{
+			"text": 2,
+			"name": "Cruiser"
+		},
+		{
+			"text": 3,
+			"name": "Battleship"
+		},
+		{
+			"text": 4,
+			"name": "Titan"
+		}
+	]
+}

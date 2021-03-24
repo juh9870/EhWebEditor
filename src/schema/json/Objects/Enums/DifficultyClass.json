@@ -1,0 +1,18 @@
+{
+	"type": "enum",
+	"name": "DifficultyClass",
+	"item": [
+		{
+			"text": 0,
+			"name": "Default"
+		},
+		{
+			"text": 1,
+			"name": "Class1"
+		},
+		{
+			"text": 2,
+			"name": "Class2"
+		}
+	]
+}

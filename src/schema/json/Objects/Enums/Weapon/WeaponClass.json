@@ -1,0 +1,24 @@
+{
+	"type": "enum",
+	"name": "WeaponClass",
+	"item": [
+		{
+			"name": "Common"
+		},
+		{
+			"name": "Manageable"
+		},
+		{
+			"name": "Continuous"
+		},
+		{
+			"name": "MashineGun"
+		},
+		{
+			"name": "MultiShot"
+		},
+		{
+			"name": "RequiredCharging"
+		}
+	]
+}

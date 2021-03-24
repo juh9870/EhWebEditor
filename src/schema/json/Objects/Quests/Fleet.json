@@ -1,0 +1,43 @@
+{
+	"name": "Fleet",
+	"type": "object",
+	"typeid": "Fleet",
+	"member": [
+		{
+			"name": "Factions",
+			"type": "struct",
+			"typeid": "FactionFilter"
+		},
+		{
+			"name": "LevelBonus",
+			"type": "int",
+			"minvalue": "-10000",
+			"maxvalue": "10000"
+		},
+		{
+			"name": "NoRandomShips",
+			"type": "bool"
+		},
+		{
+			"name": "CombatTimeLimit",
+			"type": "int",
+			"minvalue": "0",
+			"maxvalue": "999"
+		},
+		{
+			"name": "LootCondition",
+			"type": "enum",
+			"typeid": "RewardCondition"
+		},
+		{
+			"name": "ExpCondition",
+			"type": "enum",
+			"typeid": "RewardCondition"
+		},
+		{
+			"name": "SpecificShips",
+			"type": "object_list",
+			"typeid": "ShipBuild"
+		}
+	]
+}

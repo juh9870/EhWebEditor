@@ -1,0 +1,15 @@
+{
+	"type": "enum",
+	"name": "ActivationType",
+	"item": [
+		{
+			"name": "None"
+		},
+		{
+			"name": "Manual"
+		},
+		{
+			"name": "Mixed"
+		}
+	]
+}

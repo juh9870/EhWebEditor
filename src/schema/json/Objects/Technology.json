@@ -1,0 +1,62 @@
+{
+	"name": "Technology",
+	"type": "object",
+	"typeid": "Technology",
+	"switch": "Type",
+	"member": [
+		{
+			"name": "Type",
+			"type": "enum",
+			"typeid": "TechType"
+		},
+		{
+			"name": "ItemId",
+			"alias": "Component",
+			"type": "object",
+			"typeid": "Component",
+			"case": "Component",
+			"options": "notnull"
+		},
+		{
+			"name": "ItemId",
+			"alias": "Satellite",
+			"type": "object",
+			"typeid": "Satellite",
+			"case": "Satellite",
+			"options": "notnull"
+		},
+		{
+			"name": "ItemId",
+			"alias": "Ship",
+			"type": "object",
+			"typeid": "Ship",
+			"case": "Ship",
+			"options": "notnull"
+		},
+		{
+			"name": "Faction",
+			"type": "object",
+			"typeid": "Faction",
+			"case": "Component,Satellite"
+		},
+		{
+			"name": "Price",
+			"type": "int",
+			"minvalue": "0",
+			"maxvalue": "10000"
+		},
+		{
+			"name": "Hidden",
+			"type": "bool"
+		},
+		{
+			"name": "Special",
+			"type": "bool"
+		},
+		{
+			"name": "Dependencies",
+			"type": "object_list",
+			"typeid": "Technology"
+		}
+	]
+}

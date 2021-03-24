@@ -1,0 +1,28 @@
+{
+	"name": "SatelliteBuild",
+	"type": "object",
+	"typeid": "SatelliteBuild",
+	"member": [
+		{
+			"name": "SatelliteId",
+			"type": "object",
+			"typeid": "Satellite",
+			"alias": "Satellite",
+			"options": "notnull"
+		},
+		{
+			"name": "NotAvailableInGame",
+			"type": "bool"
+		},
+		{
+			"name": "DifficultyClass",
+			"type": "enum",
+			"typeid": "DifficultyClass"
+		},
+		{
+			"name": "Components",
+			"type": "struct_list",
+			"typeid": "InstalledComponent"
+		}
+	]
+}

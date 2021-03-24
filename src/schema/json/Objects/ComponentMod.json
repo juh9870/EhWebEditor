@@ -1,0 +1,10 @@
+{
+	"name": "ComponentMod",
+	"type": "object",
+	"typeid": "ComponentMod",
+	"member": {
+		"name": "Type",
+		"type": "enum",
+		"typeid": "ComponentModType"
+	}
+}

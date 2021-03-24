@@ -1,0 +1,30 @@
+{
+  "name": "web_editor",
+  "version": "1.0.0",
+  "scripts": {
+    "prebuild": "cd src/schema/ && node schemaGen.js",
+    "build": "tsc && browserify src/index.js -p esmify -o dist/bundle.js"
+  },
+  "dependencies": {
+    "@json-editor/json-editor": "latest",
+    "browserify": "latest",
+    "fast-xml-parser": "^3.19.0",
+    "fs-extra": "^9.1.0",
+    "jquery": "latest",
+    "typescript": "latest",
+    "@zip.js/zip.js": "latest",
+    "downloadjs": "latest",
+    "rfdc": "latest",
+    "jstree": "latest",
+    "esmify": "latest",
+    "deep-equal": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/jquery": "latest",
+    "@types/fs-extra": "latest",
+    "@types/downloadjs": "latest",
+    "@types/jstree": "latest",
+    "@types/deep-equal": "latest"
+  }
+}

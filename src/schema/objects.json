@@ -1,0 +1,4070 @@
+{
+	"AmmunitionObsolete": {
+		"name": "AmmunitionObsolete",
+		"type": "object",
+		"typeid": "AmmunitionObsolete",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "AmmunitionClass",
+				"type": "enum",
+				"typeid": "AmmunitionClassObsolete",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DamageType",
+				"type": "enum",
+				"typeid": "DamageType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Impulse",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 10,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Recoil",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 10,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Size",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "InitialPosition",
+				"type": "vector",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "AreaOfEffect",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Damage",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Range",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Velocity",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "LifeTime",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "HitPoints",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "IgnoresShipVelocity",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyCost",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "CoupledAmmunitionId",
+				"type": "object",
+				"typeid": "AmmunitionObsolete",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "CoupledAmmunition",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Color",
+				"type": "color",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "FireSound",
+				"type": "audioclip",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "HitSound",
+				"type": "audioclip",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "HitEffectPrefab",
+				"type": "prefab",
+				"typeid": "Effect",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BulletPrefab",
+				"type": "prefab",
+				"typeid": "Bullet",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Barrel": {
+		"name": "Barrel",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Position",
+				"type": "vector",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Rotation",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -360,
+				"maxvalue": 360,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Offset",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "PlatformType",
+				"type": "enum",
+				"typeid": "PlatformType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "AutoAimingArc",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 360,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "RotationSpeed",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "WeaponClass",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Image",
+				"type": "image",
+				"typeid": "Satellite",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Size",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Component": {
+		"name": "Component",
+		"type": "object",
+		"typeid": "Component",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Name",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Description",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DisplayCategory",
+				"type": "enum",
+				"typeid": "ComponentCategory",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Availability",
+				"type": "enum",
+				"typeid": "Availability",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ComponentStatsId",
+				"type": "object",
+				"typeid": "ComponentStats",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Stats",
+				"notnull": true,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Faction",
+				"type": "object",
+				"typeid": "Faction",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Level",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Icon",
+				"type": "image",
+				"typeid": "Component",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Color",
+				"type": "color",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Layout",
+				"type": "layout",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "CellType",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DeviceId",
+				"type": "object",
+				"typeid": "Device",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Device",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "WeaponId",
+				"type": "object",
+				"typeid": "Weapon",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Weapon",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "AmmunitionId",
+				"type": "object",
+				"typeid": "Ammunition",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Ammunition",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "AmmunitionId",
+				"type": "object",
+				"typeid": "AmmunitionObsolete",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "AmmunitionObsolete",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "WeaponSlotType",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneBayId",
+				"type": "object",
+				"typeid": "DroneBay",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "DroneBay",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneId",
+				"type": "object",
+				"typeid": "ShipBuild",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Drone",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Restrictions",
+				"type": "struct",
+				"typeid": "ComponentRestrictions",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "PossibleModifications",
+				"type": "object_list",
+				"typeid": "ComponentMod",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"ComponentMod": {
+		"name": "ComponentMod",
+		"type": "object",
+		"typeid": "ComponentMod",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Type",
+				"type": "enum",
+				"typeid": "ComponentModType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"ComponentRestrictions": {
+		"name": "ComponentRestrictions",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "ShipSizes",
+				"type": "enum_flags",
+				"typeid": "SizeClass",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "NotForOrganicShips",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "NotForMechanicShips",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "UniqueComponentTag",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"ComponentStats": {
+		"name": "ComponentStats",
+		"type": "object",
+		"typeid": "ComponentStats",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Type",
+				"type": "enum",
+				"typeid": "ComponentStatsType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ArmorPoints",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1000000,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ArmorRepairRate",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1000000,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ArmorRepairCooldownModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1,
+				"maxvalue": 1,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyPoints",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1000000,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyRechargeRate",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1000000,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyRechargeCooldownModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -5,
+				"maxvalue": 5,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ShieldPoints",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1000000,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ShieldRechargeRate",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1000000,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ShieldRechargeCooldownModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -5,
+				"maxvalue": 5,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Weight",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1000000,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "RammingDamage",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1000000,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyAbsorption",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1000000,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "KineticResistance",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1000000,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyResistance",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1000000,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ThermalResistance",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -1000000,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnginePower",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 2000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "TurnRate",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 2000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Autopilot",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneRangeModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -50,
+				"maxvalue": 50,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneDamageModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -50,
+				"maxvalue": 50,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneDefenseModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -50,
+				"maxvalue": 50,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneSpeedModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -50,
+				"maxvalue": 50,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DronesBuiltPerSecond",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DroneBuildTimeModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "WeaponFireRateModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -100,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "WeaponDamageModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -100,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "WeaponRangeModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -100,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "WeaponEnergyCostModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -100,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "AlterWeaponPlatform",
+				"type": "enum",
+				"typeid": "PlatformType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"DatabaseSettings": {
+		"name": "DatabaseSettings",
+		"type": "settings",
+		"typeid": "DatabaseSettings",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "DatabaseVersion",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ModName",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ModId",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ModVersion",
+				"type": "int",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "UnloadOriginalDatabase",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Device": {
+		"name": "Device",
+		"type": "object",
+		"typeid": "Device",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "DeviceClass",
+				"type": "enum",
+				"typeid": "DeviceClass",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyConsumption",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "PassiveEnergyConsumption",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Power",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Range",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Size",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Cooldown",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Lifetime",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Offset",
+				"type": "vector",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ActivationType",
+				"type": "enum",
+				"typeid": "ActivationType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Color",
+				"type": "color",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Sound",
+				"type": "audioclip",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EffectPrefab",
+				"type": "prefab",
+				"typeid": "Effect",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ObjectPrefab",
+				"type": "prefab",
+				"typeid": "Object",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ControlButtonIcon",
+				"type": "image",
+				"typeid": "ActionButton",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"DroneBay": {
+		"name": "DroneBay",
+		"type": "object",
+		"typeid": "DroneBay",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "EnergyConsumption",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "PassiveEnergyConsumption",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Range",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DamageMultiplier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0.01,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DefenseMultiplier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0.01,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "SpeedMultiplier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0.01,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ImprovedAi",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Capacity",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ActivationType",
+				"type": "enum",
+				"typeid": "ActivationType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "LaunchSound",
+				"type": "audioclip",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "LaunchEffectPrefab",
+				"type": "prefab",
+				"typeid": "Effect",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ControlButtonIcon",
+				"type": "image",
+				"typeid": "ActionButton",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Engine": {
+		"name": "Engine",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Position",
+				"type": "vector",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Size",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"ExplorationSettings": {
+		"name": "ExplorationSettings",
+		"type": "settings",
+		"typeid": "ExplorationSettings",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "OutpostShip",
+				"type": "object",
+				"typeid": "Ship",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "TurretShip",
+				"type": "object",
+				"typeid": "Ship",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "InfectedPlanetFaction",
+				"type": "object",
+				"typeid": "Faction",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "HiveShipBuild",
+				"type": "object",
+				"typeid": "ShipBuild",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Faction": {
+		"name": "Faction",
+		"type": "object",
+		"typeid": "Faction",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Name",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Color",
+				"type": "color",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "HomeStarDistance",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "WanderingShipsDistance",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Hidden",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Hostile",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"GalaxySettings": {
+		"name": "GalaxySettings",
+		"type": "settings",
+		"typeid": "GalaxySettings",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "AbandonedStarbaseFaction",
+				"type": "object",
+				"typeid": "Faction",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "StartingShipBuilds",
+				"type": "object_list",
+				"typeid": "ShipBuild",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"InstalledComponent": {
+		"name": "InstalledComponent",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "ComponentId",
+				"type": "object",
+				"typeid": "Component",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Component",
+				"notnull": true,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Modification",
+				"type": "enum",
+				"typeid": "ComponentModType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Quality",
+				"type": "enum",
+				"typeid": "ModificationQuality",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Locked",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "X",
+				"type": "int",
+				"typeid": "",
+				"minvalue": -32768,
+				"maxvalue": 32767,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Y",
+				"type": "int",
+				"typeid": "",
+				"minvalue": -32768,
+				"maxvalue": 32767,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BarrelId",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 255,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Behaviour",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 10,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "KeyBinding",
+				"type": "int",
+				"typeid": "",
+				"minvalue": -10,
+				"maxvalue": 10,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Character": {
+		"name": "Character",
+		"type": "object",
+		"typeid": "Character",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Name",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "AvatarIcon",
+				"type": "image",
+				"typeid": "AvatarIcon",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Faction",
+				"type": "object",
+				"typeid": "Faction",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Inventory",
+				"type": "object",
+				"typeid": "Loot",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Fleet",
+				"type": "object",
+				"typeid": "Fleet",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Relations",
+				"type": "int",
+				"typeid": "",
+				"minvalue": -100,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "IsUnique",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"FactionFilter": {
+		"name": "FactionFilter",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Type",
+				"type": "enum",
+				"typeid": "FactionFilterType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "List",
+				"type": "object_list",
+				"typeid": "Faction",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Fleet": {
+		"name": "Fleet",
+		"type": "object",
+		"typeid": "Fleet",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Factions",
+				"type": "struct",
+				"typeid": "FactionFilter",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "LevelBonus",
+				"type": "int",
+				"typeid": "",
+				"minvalue": -10000,
+				"maxvalue": 10000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "NoRandomShips",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "CombatTimeLimit",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "LootCondition",
+				"type": "enum",
+				"typeid": "RewardCondition",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ExpCondition",
+				"type": "enum",
+				"typeid": "RewardCondition",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "SpecificShips",
+				"type": "object_list",
+				"typeid": "ShipBuild",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Loot": {
+		"name": "Loot",
+		"type": "object",
+		"typeid": "Loot",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Loot",
+				"type": "struct",
+				"typeid": "LootContent",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"LootContent": {
+		"name": "LootContent",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Type",
+				"type": "enum",
+				"typeid": "LootItemType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ItemId",
+				"type": "object",
+				"typeid": "QuestItem",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "QuestItem",
+				"notnull": true,
+				"case": "QuestItem"
+			},
+			{
+				"parent": "[circular]",
+				"name": "ItemId",
+				"type": "object",
+				"typeid": "Ship",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Ship",
+				"notnull": true,
+				"case": "EmptyShip"
+			},
+			{
+				"parent": "[circular]",
+				"name": "ItemId",
+				"type": "object",
+				"typeid": "ShipBuild",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "ShipBuild",
+				"notnull": true,
+				"case": "Ship"
+			},
+			{
+				"parent": "[circular]",
+				"name": "ItemId",
+				"type": "object",
+				"typeid": "Component",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Component",
+				"notnull": true,
+				"case": "Component"
+			},
+			{
+				"parent": "[circular]",
+				"name": "MinAmount",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": "Money,Fuel,Stars,RandomComponents,     RandomItems,QuestItem,Component"
+			},
+			{
+				"parent": "[circular]",
+				"name": "MaxAmount",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": "Money,Fuel,Stars,RandomComponents,     RandomItems,QuestItem,Component"
+			},
+			{
+				"parent": "[circular]",
+				"name": "ValueRatio",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0.001,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": "SomeMoney,RandomComponents"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Factions",
+				"type": "struct",
+				"typeid": "FactionFilter",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "RandomComponents"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Items",
+				"type": "struct_list",
+				"typeid": "LootItem",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "RandomItems,AllItems,ItemsWithChance"
+			}
+		],
+		"switch": "Type"
+	},
+	"LootItem": {
+		"name": "LootItem",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Weight",
+				"type": "float",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Loot",
+				"type": "struct",
+				"typeid": "LootContent",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Node": {
+		"name": "Node",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Id",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Type",
+				"type": "enum",
+				"typeid": "NodeType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "RequiredView",
+				"type": "enum",
+				"typeid": "RequiredViewMode",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "ShowDialog"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Message",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "ShowDialog,Switch,Condition,Random"
+			},
+			{
+				"parent": "[circular]",
+				"name": "DefaultTransition",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": "Switch,Random"
+			},
+			{
+				"parent": "[circular]",
+				"name": "DefaultTransition",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": 1000,
+				"alias": "Transition",
+				"notnull": false,
+				"case": "Retreat DestroyOccupants SuppressOccupants ReceiveItem RemoveItem Trade StartQuest      ChangeFactionRelations SetFactionRelations ChangeCharacterRelations SetCharacterRelations OpenShipyard"
+			},
+			{
+				"parent": "[circular]",
+				"name": "DefaultTransition",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": 1000,
+				"alias": "VictoryTransition",
+				"notnull": false,
+				"case": "AttackFleet,AttackOccupants"
+			},
+			{
+				"parent": "[circular]",
+				"name": "FailureTransition",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": "AttackFleet,AttackOccupants"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Enemy",
+				"type": "object",
+				"typeid": "Fleet",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "ShowDialog,AttackFleet"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Loot",
+				"type": "object",
+				"typeid": "Loot",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "ShowDialog,ReceiveItem,RemoveItem,Trade,AttackFleet"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Quest",
+				"type": "object",
+				"typeid": "Quest",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "StartQuest"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Character",
+				"type": "object",
+				"typeid": "Character",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "ShowDialog,ChangeCharacterRelations,SetCharacterRelations"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Faction",
+				"type": "object",
+				"typeid": "Faction",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "OpenShipyard"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Value",
+				"type": "int",
+				"typeid": "",
+				"minvalue": -100,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": "ChangeCharacterRelations,ChangeFactionRelations,SetCharacterRelations,SetFactionRelations"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Value",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 10000,
+				"alias": "Level",
+				"notnull": false,
+				"case": "OpenShipyard"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Actions",
+				"type": "struct_list",
+				"typeid": "NodeAction",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "ShowDialog"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Transitions",
+				"type": "struct_list",
+				"typeid": "NodeTransition",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "Switch,Random,Condition"
+			}
+		],
+		"switch": "Type"
+	},
+	"NodeAction": {
+		"name": "NodeAction",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "TargetNode",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Requirement",
+				"type": "struct",
+				"typeid": "Requirement",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ButtonText",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"NodeTransition": {
+		"name": "NodeTransition",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "TargetNode",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Requirement",
+				"type": "struct",
+				"typeid": "Requirement",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Weight",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Quest": {
+		"name": "Quest",
+		"type": "object",
+		"typeid": "Quest",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Name",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "QuestType",
+				"type": "enum",
+				"typeid": "QuestType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "StartCondition",
+				"type": "enum",
+				"typeid": "StartCondition",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Weight",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Requirement",
+				"type": "struct",
+				"typeid": "Requirement",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Level",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Nodes",
+				"type": "struct_list",
+				"typeid": "Node",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"QuestItem": {
+		"name": "QuestItem",
+		"type": "object",
+		"typeid": "QuestItem",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Name",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Description",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Icon",
+				"type": "image",
+				"typeid": "ArtifactIcon",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Color",
+				"type": "color",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Price",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Requirement": {
+		"name": "Requirement",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Type",
+				"type": "enum",
+				"typeid": "RequirementType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ItemId",
+				"type": "object",
+				"typeid": "Loot",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Loot",
+				"notnull": false,
+				"case": "HaveItemById"
+			},
+			{
+				"parent": "[circular]",
+				"name": "ItemId",
+				"type": "object",
+				"typeid": "QuestItem",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "QuestItem",
+				"notnull": false,
+				"case": "HaveQuestItem"
+			},
+			{
+				"parent": "[circular]",
+				"name": "ItemId",
+				"type": "object",
+				"typeid": "Quest",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Quest",
+				"notnull": false,
+				"case": "QuestCompleted,QuestActive"
+			},
+			{
+				"parent": "[circular]",
+				"name": "MinValue",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 10000,
+				"alias": "",
+				"notnull": false,
+				"case": "PlayerPosition,RandomStarSystem"
+			},
+			{
+				"parent": "[circular]",
+				"name": "MaxValue",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 10000,
+				"alias": "",
+				"notnull": false,
+				"case": "PlayerPosition,RandomStarSystem"
+			},
+			{
+				"parent": "[circular]",
+				"name": "MinValue",
+				"type": "int",
+				"typeid": "",
+				"minvalue": -100,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": "CharacterRelations,FactionRelations"
+			},
+			{
+				"parent": "[circular]",
+				"name": "MaxValue",
+				"type": "int",
+				"typeid": "",
+				"minvalue": -100,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": "CharacterRelations,FactionRelations"
+			},
+			{
+				"parent": "[circular]",
+				"name": "MinValue",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": 1000000,
+				"alias": "Amount",
+				"notnull": false,
+				"case": "HaveQuestItem"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Character",
+				"type": "object",
+				"typeid": "Character",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "CharacterRelations"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Faction",
+				"type": "object",
+				"typeid": "Faction",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "Faction"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Loot",
+				"type": "struct",
+				"typeid": "LootContent",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "HaveItem"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Requirements",
+				"type": "struct_list",
+				"typeid": "Requirement",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "All,Any,None"
+			}
+		],
+		"switch": "Type"
+	},
+	"Satellite": {
+		"name": "Satellite",
+		"type": "object",
+		"typeid": "Satellite",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Name",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ModelImage",
+				"type": "image",
+				"typeid": "Satellite",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ModelScale",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0.1,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "SizeClass",
+				"type": "enum",
+				"typeid": "SizeClass",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Layout",
+				"type": "layout",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Barrels",
+				"type": "struct_list",
+				"typeid": "Barrel",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"SatelliteBuild": {
+		"name": "SatelliteBuild",
+		"type": "object",
+		"typeid": "SatelliteBuild",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "SatelliteId",
+				"type": "object",
+				"typeid": "Satellite",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Satellite",
+				"notnull": true,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "NotAvailableInGame",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DifficultyClass",
+				"type": "enum",
+				"typeid": "DifficultyClass",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Components",
+				"type": "struct_list",
+				"typeid": "InstalledComponent",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Ship": {
+		"name": "Ship",
+		"type": "object",
+		"typeid": "Ship",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "ShipCategory",
+				"type": "enum",
+				"typeid": "ShipCategory",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Name",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Faction",
+				"type": "object",
+				"typeid": "Faction",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "SizeClass",
+				"type": "enum",
+				"typeid": "SizeClass",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "IconImage",
+				"type": "image",
+				"typeid": "ShipIcon",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "IconScale",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0.1,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ModelImage",
+				"type": "image",
+				"typeid": "Ship",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ModelScale",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0.1,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnginePosition",
+				"type": "vector",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EngineColor",
+				"type": "color",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EngineSize",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Engines",
+				"type": "struct_list",
+				"typeid": "Engine",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyResistance",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -100,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "KineticResistance",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -100,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "HeatResistance",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -100,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Regeneration",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BaseWeightModifier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": -0.9,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BuiltinDevices",
+				"type": "object_list",
+				"typeid": "Device",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Layout",
+				"type": "layout",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Barrels",
+				"type": "struct_list",
+				"typeid": "Barrel",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"ShipBuild": {
+		"name": "ShipBuild",
+		"type": "object",
+		"typeid": "ShipBuild",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "ShipId",
+				"type": "object",
+				"typeid": "Ship",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Ship",
+				"notnull": true,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "NotAvailableInGame",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DifficultyClass",
+				"type": "enum",
+				"typeid": "DifficultyClass",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BuildFaction",
+				"type": "object",
+				"typeid": "Faction",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Components",
+				"type": "struct_list",
+				"typeid": "InstalledComponent",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"ShipSettings": {
+		"name": "ShipSettings",
+		"type": "settings",
+		"typeid": "ShipSettings",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "DefaultWeightPerCell",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "MinimumWeightPerCell",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BaseArmorPoints",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ArmorPointsPerCell",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ArmorRepairCooldown",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 60,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BaseEnergyPoints",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BaseEnergyRechargeRate",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyRechargeCooldown",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 60,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BaseShieldRechargeRate",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ShieldRechargeCooldown",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 60,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BaseDroneReconstructionSpeed",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "MaxVelocity",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 5,
+				"maxvalue": 30,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "MaxTurnRate",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 5,
+				"maxvalue": 30,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Skill": {
+		"name": "Skill",
+		"type": "object",
+		"typeid": "Skill",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Name",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Icon",
+				"type": "image",
+				"typeid": "SkillIcon",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Description",
+				"type": "string",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BaseRequirement",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "RequirementPerLevel",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BasePrice",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "PricePerLevel",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "MaxLevel",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 1,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Technology": {
+		"name": "Technology",
+		"type": "object",
+		"typeid": "Technology",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Type",
+				"type": "enum",
+				"typeid": "TechType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ItemId",
+				"type": "object",
+				"typeid": "Component",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Component",
+				"notnull": true,
+				"case": "Component"
+			},
+			{
+				"parent": "[circular]",
+				"name": "ItemId",
+				"type": "object",
+				"typeid": "Satellite",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Satellite",
+				"notnull": true,
+				"case": "Satellite"
+			},
+			{
+				"parent": "[circular]",
+				"name": "ItemId",
+				"type": "object",
+				"typeid": "Ship",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "Ship",
+				"notnull": true,
+				"case": "Ship"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Faction",
+				"type": "object",
+				"typeid": "Faction",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "Component,Satellite"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Price",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 10000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Hidden",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Special",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Dependencies",
+				"type": "object_list",
+				"typeid": "Technology",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": "Type"
+	},
+	"Ammunition": {
+		"name": "Ammunition",
+		"type": "object",
+		"typeid": "Ammunition",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Body",
+				"type": "struct",
+				"typeid": "BulletBody",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Triggers",
+				"type": "struct_list",
+				"typeid": "BulletTrigger",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ImpactType",
+				"type": "enum",
+				"typeid": "BulletImpactType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Effects",
+				"type": "struct_list",
+				"typeid": "ImpactEffect",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"BulletBody": {
+		"name": "BulletBody",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Type",
+				"type": "enum",
+				"typeid": "BulletType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Size",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Velocity",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Range",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Lifetime",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Weight",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "HitPoints",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Color",
+				"type": "color",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "BulletPrefab",
+				"type": "object",
+				"typeid": "BulletPrefab",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EnergyCost",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "CanBeDisarmed",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "FriendlyFire",
+				"type": "bool",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"BulletPrefab": {
+		"name": "BulletPrefab",
+		"type": "object",
+		"typeid": "BulletPrefab",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Shape",
+				"type": "enum",
+				"typeid": "BulletShape",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Image",
+				"type": "image",
+				"typeid": "Ammunition",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Size",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0.01,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Margins",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "MainColor",
+				"type": "color",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "MainColorMode",
+				"type": "enum",
+				"typeid": "ColorMode",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "SecondColor",
+				"type": "color",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "SecondColorMode",
+				"type": "enum",
+				"typeid": "ColorMode",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"BulletTrigger": {
+		"name": "BulletTrigger",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Condition",
+				"type": "enum",
+				"typeid": "BulletTriggerCondition",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "EffectType",
+				"type": "enum",
+				"typeid": "BulletEffectType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "VisualEffect",
+				"type": "object",
+				"typeid": "VisualEffect",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "PlaySfx"
+			},
+			{
+				"parent": "[circular]",
+				"name": "AudioClip",
+				"type": "audioclip",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "PlaySfx,SpawnBullet"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Ammunition",
+				"type": "object",
+				"typeid": "Ammunition",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "SpawnBullet"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Color",
+				"type": "color",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "PlaySfx,SpawnBullet"
+			},
+			{
+				"parent": "[circular]",
+				"name": "ColorMode",
+				"type": "enum",
+				"typeid": "ColorMode",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": "PlaySfx,SpawnBullet"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Quantity",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": "SpawnBullet"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Size",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": "PlaySfx,SpawnBullet"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Lifetime",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": "PlaySfx"
+			},
+			{
+				"parent": "[circular]",
+				"name": "Cooldown",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": "SpawnBullet"
+			},
+			{
+				"parent": "[circular]",
+				"name": "RandomFactor",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1,
+				"alias": "",
+				"notnull": false,
+				"case": "SpawnBullet"
+			},
+			{
+				"parent": "[circular]",
+				"name": "PowerMultiplier",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": "SpawnBullet"
+			},
+			{
+				"parent": "[circular]",
+				"name": "MaxNestingLevel",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": "SpawnBullet"
+			}
+		],
+		"switch": "EffectType"
+	},
+	"ImpactEffect": {
+		"name": "ImpactEffect",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Type",
+				"type": "enum",
+				"typeid": "ImpactEffectType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "DamageType",
+				"type": "enum",
+				"typeid": "DamageType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Power",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Factor",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"VisualEffect": {
+		"name": "VisualEffect",
+		"type": "object",
+		"typeid": "VisualEffect",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Elements",
+				"type": "struct_list",
+				"typeid": "VisualEffectElement",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"VisualEffectElement": {
+		"name": "VisualEffectElement",
+		"type": "struct",
+		"typeid": "",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "Type",
+				"type": "enum",
+				"typeid": "VisualEffectType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Image",
+				"type": "image",
+				"typeid": "Effect",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ColorMode",
+				"type": "enum",
+				"typeid": "ColorMode",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Color",
+				"type": "color",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Size",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0.001,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "StartTime",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Lifetime",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 1000,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	},
+	"Weapon": {
+		"name": "Weapon",
+		"type": "object",
+		"typeid": "Weapon",
+		"member": [
+			{
+				"parent": "[circular]",
+				"name": "WeaponClass",
+				"type": "enum",
+				"typeid": "WeaponClass",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "FireRate",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 100,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Spread",
+				"type": "float",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 360,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "Magazine",
+				"type": "int",
+				"typeid": "",
+				"minvalue": 0,
+				"maxvalue": 999999999,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ActivationType",
+				"type": "enum",
+				"typeid": "ActivationType",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ShotSound",
+				"type": "audioclip",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ChargeSound",
+				"type": "audioclip",
+				"typeid": "",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ShotEffectPrefab",
+				"type": "prefab",
+				"typeid": "Effect",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			},
+			{
+				"parent": "[circular]",
+				"name": "ControlButtonIcon",
+				"type": "image",
+				"typeid": "ActionButton",
+				"minvalue": null,
+				"maxvalue": null,
+				"alias": "",
+				"notnull": false,
+				"case": ""
+			}
+		],
+		"switch": ""
+	}
+}

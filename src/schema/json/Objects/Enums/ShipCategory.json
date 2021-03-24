@@ -1,0 +1,27 @@
+{
+	"type": "enum",
+	"name": "ShipCategory",
+	"item": [
+		{
+			"name": "Common"
+		},
+		{
+			"name": "Rare"
+		},
+		{
+			"name": "Flagship"
+		},
+		{
+			"name": "Special"
+		},
+		{
+			"name": "Starbase"
+		},
+		{
+			"name": "Hidden"
+		},
+		{
+			"name": "Drone"
+		}
+	]
+}

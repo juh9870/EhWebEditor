@@ -1,0 +1,102 @@
+{
+	"type": "enum",
+	"name": "AmmunitionClassObsolete",
+	"item": [
+		{
+			"name": "Common"
+		},
+		{
+			"name": "Acid"
+		},
+		{
+			"name": "Aura"
+		},
+		{
+			"name": "Carrier"
+		},
+		{
+			"name": "Bomb"
+		},
+		{
+			"name": "DamageOverTime"
+		},
+		{
+			"name": "DroneControl"
+		},
+		{
+			"name": "Emp"
+		},
+		{
+			"name": "EmpMissile"
+		},
+		{
+			"name": "EnergyBeam"
+		},
+		{
+			"name": "EnergySiphon"
+		},
+		{
+			"name": "Explosion"
+		},
+		{
+			"name": "Fireworks"
+		},
+		{
+			"name": "FragBomb"
+		},
+		{
+			"name": "Fragment"
+		},
+		{
+			"name": "HomingImmobilizer"
+		},
+		{
+			"name": "HomingTorpedo"
+		},
+		{
+			"name": "Immobilizer"
+		},
+		{
+			"name": "LaserBeam"
+		},
+		{
+			"name": "Rocket"
+		},
+		{
+			"name": "Singularity"
+		},
+		{
+			"name": "TractorBeam"
+		},
+		{
+			"name": "VampiricRay"
+		},
+		{
+			"name": "SmallVampiricRay"
+		},
+		{
+			"name": "RepairRay"
+		},
+		{
+			"name": "PlasmaWeb"
+		},
+		{
+			"name": "UnguidedRocket"
+		},
+		{
+			"name": "IonBeam"
+		},
+		{
+			"name": "AcidRocket"
+		},
+		{
+			"name": "BlackHole"
+		},
+		{
+			"name": "ClusterMissile"
+		},
+		{
+			"name": "HomingCarrier"
+		}
+	]
+}

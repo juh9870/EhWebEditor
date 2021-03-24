@@ -1,0 +1,26 @@
+{
+	"type": "enum",
+	"name": "Availability",
+	"item": [
+		{
+			"text": 0,
+			"name": "None"
+		},
+		{
+			"text": 1,
+			"name": "Common"
+		},
+		{
+			"text": 2,
+			"name": "Rare"
+		},
+		{
+			"text": 3,
+			"name": "Special"
+		},
+		{
+			"text": 4,
+			"name": "Hidden"
+		}
+	]
+}

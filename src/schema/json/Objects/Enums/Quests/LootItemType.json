@@ -1,0 +1,62 @@
+{
+	"type": "enum",
+	"name": "LootItemType",
+	"item": [
+		{
+			"text": 0,
+			"name": "None"
+		},
+		{
+			"text": 1,
+			"name": "SomeMoney"
+		},
+		{
+			"text": 2,
+			"name": "Fuel"
+		},
+		{
+			"text": 3,
+			"name": "Money"
+		},
+		{
+			"text": 4,
+			"name": "Stars"
+		},
+		{
+			"text": 5,
+			"name": "StarMap"
+		},
+		{
+			"text": 10,
+			"name": "RandomComponents"
+		},
+		{
+			"text": 20,
+			"name": "RandomItems"
+		},
+		{
+			"text": 21,
+			"name": "AllItems"
+		},
+		{
+			"text": 22,
+			"name": "ItemsWithChance"
+		},
+		{
+			"text": 25,
+			"name": "QuestItem"
+		},
+		{
+			"text": 30,
+			"name": "Ship"
+		},
+		{
+			"text": 31,
+			"name": "EmptyShip"
+		},
+		{
+			"text": 35,
+			"name": "Component"
+		}
+	]
+}

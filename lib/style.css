@@ -1,0 +1,55 @@
+td {
+    height: 100%;
+    background: #4B515D;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="button"],
+input[type="file"]::-webkit-file-upload-button,
+button, select {
+    background-color: #3E4551;
+    color: #ccc
+}
+
+body {
+    background-color: #2E2E2E;
+}
+
+div[style*="opacity: 1"] {
+    background: #212121 !important;
+    border-color: black;
+}
+
+div {
+    border-color: #212121 !important;
+}
+
+.jstree-wholerow-hovered {
+    background: #212121 !important;
+}
+
+.jstree-wholerow-clicked {
+    background: #1C2331 !important;
+}
+
+table {
+    width: 100%;
+    min-height: 150vh
+}
+
+body {
+    height: 150%;
+}
+
+html {
+    height: 100%;
+}
+
+*[data-schematype='string'] input {
+    width: 99%;
+}
+
+td {
+    vertical-align: top;
+}

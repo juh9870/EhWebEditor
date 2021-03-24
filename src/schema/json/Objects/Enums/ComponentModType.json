@@ -1,0 +1,72 @@
+{
+	"type": "enum",
+	"name": "ComponentModType",
+	"item": [
+		{
+			"name": "Empty"
+		},
+		{
+			"name": "Lightweight"
+		},
+		{
+			"name": "LowEnergyCost"
+		},
+		{
+			"name": "Fortified"
+		},
+		{
+			"name": "ExtraHitPoints"
+		},
+		{
+			"name": "Damage"
+		},
+		{
+			"name": "Cooldown"
+		},
+		{
+			"name": "Range"
+		},
+		{
+			"name": "BulletVelocity"
+		},
+		{
+			"name": "EnergyCapacity"
+		},
+		{
+			"name": "RepairRate"
+		},
+		{
+			"name": "EnginePower"
+		},
+		{
+			"name": "RechargeRate"
+		},
+		{
+			"name": "BulletVelocity2"
+		},
+		{
+			"name": "AreaOfEffect"
+		},
+		{
+			"name": "ShieldPower"
+		},
+		{
+			"name": "Damage2"
+		},
+		{
+			"name": "DroneDamage"
+		},
+		{
+			"name": "DroneDefense"
+		},
+		{
+			"name": "DroneSpeed"
+		},
+		{
+			"name": "DroneRange"
+		},
+		{
+			"name": "Recoil"
+		}
+	]
+}

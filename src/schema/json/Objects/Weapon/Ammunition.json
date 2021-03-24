@@ -1,0 +1,27 @@
+{
+	"name": "Ammunition",
+	"type": "object",
+	"typeid": "Ammunition",
+	"member": [
+		{
+			"name": "Body",
+			"type": "struct",
+			"typeid": "BulletBody"
+		},
+		{
+			"name": "Triggers",
+			"type": "struct_list",
+			"typeid": "BulletTrigger"
+		},
+		{
+			"name": "ImpactType",
+			"type": "enum",
+			"typeid": "BulletImpactType"
+		},
+		{
+			"name": "Effects",
+			"type": "struct_list",
+			"typeid": "ImpactEffect"
+		}
+	]
+}

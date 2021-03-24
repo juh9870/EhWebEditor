@@ -1,0 +1,44 @@
+{
+	"name": "Quest",
+	"type": "object",
+	"typeid": "Quest",
+	"alias": "QuestModel",
+	"member": [
+		{
+			"name": "Name",
+			"type": "string"
+		},
+		{
+			"name": "QuestType",
+			"type": "enum",
+			"typeid": "QuestType"
+		},
+		{
+			"name": "StartCondition",
+			"type": "enum",
+			"typeid": "StartCondition"
+		},
+		{
+			"name": "Weight",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Requirement",
+			"type": "struct",
+			"typeid": "Requirement"
+		},
+		{
+			"name": "Level",
+			"type": "int",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Nodes",
+			"type": "struct_list",
+			"typeid": "Node"
+		}
+	]
+}

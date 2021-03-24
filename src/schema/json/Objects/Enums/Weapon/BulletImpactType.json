@@ -1,0 +1,15 @@
+{
+	"type": "enum",
+	"name": "BulletImpactType",
+	"item": [
+		{
+			"name": "HitFirstTarget"
+		},
+		{
+			"name": "HitAllTargets"
+		},
+		{
+			"name": "DamageOverTime"
+		}
+	]
+}

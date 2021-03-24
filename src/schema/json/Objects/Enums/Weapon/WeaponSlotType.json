@@ -1,0 +1,29 @@
+{
+	"type": "enum",
+	"name": "WeaponSlotType",
+	"item": [
+		{
+			"name": "Default"
+		},
+		{
+			"text": "'C'",
+			"name": "Cannon"
+		},
+		{
+			"text": "'T'",
+			"name": "Torpedo"
+		},
+		{
+			"text": "'M'",
+			"name": "Missile"
+		},
+		{
+			"text": "'L'",
+			"name": "Laser"
+		},
+		{
+			"text": "'S'",
+			"name": "Special"
+		}
+	]
+}

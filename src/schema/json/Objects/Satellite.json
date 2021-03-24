@@ -1,0 +1,36 @@
+{
+	"name": "Satellite",
+	"type": "object",
+	"typeid": "Satellite",
+	"member": [
+		{
+			"name": "Name",
+			"type": "string"
+		},
+		{
+			"name": "ModelImage",
+			"type": "image",
+			"typeid": "Satellite"
+		},
+		{
+			"name": "ModelScale",
+			"type": "float",
+			"minvalue": "0.1",
+			"maxvalue": "100"
+		},
+		{
+			"name": "SizeClass",
+			"type": "enum",
+			"typeid": "SizeClass"
+		},
+		{
+			"name": "Layout",
+			"type": "layout"
+		},
+		{
+			"name": "Barrels",
+			"type": "struct_list",
+			"typeid": "Barrel"
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+	"name": "Device",
+	"type": "object",
+	"typeid": "Device",
+	"options": "legacy",
+	"member": [
+		{
+			"name": "DeviceClass",
+			"type": "enum",
+			"typeid": "DeviceClass"
+		},
+		{
+			"name": "EnergyConsumption",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "PassiveEnergyConsumption",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "Power",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Range",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Size",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Cooldown",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Lifetime",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Offset",
+			"type": "vector"
+		},
+		{
+			"name": "ActivationType",
+			"type": "enum",
+			"typeid": "ActivationType"
+		},
+		{
+			"name": "Color",
+			"type": "color"
+		},
+		{
+			"name": "Sound",
+			"type": "audioclip"
+		},
+		{
+			"name": "EffectPrefab",
+			"type": "prefab",
+			"typeid": "Effect"
+		},
+		{
+			"name": "ObjectPrefab",
+			"type": "prefab",
+			"typeid": "Object"
+		},
+		{
+			"name": "ControlButtonIcon",
+			"type": "image",
+			"typeid": "ActionButton"
+		}
+	]
+}

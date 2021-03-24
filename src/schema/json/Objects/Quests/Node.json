@@ -1,0 +1,116 @@
+{
+	"name": "Node",
+	"type": "struct",
+	"switch": "Type",
+	"member": [
+		{
+			"name": "Id",
+			"type": "int",
+			"minvalue": "1",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Type",
+			"type": "enum",
+			"typeid": "NodeType"
+		},
+		{
+			"name": "RequiredView",
+			"type": "enum",
+			"typeid": "RequiredViewMode",
+			"case": "ShowDialog"
+		},
+		{
+			"name": "Message",
+			"type": "string",
+			"case": "ShowDialog,Switch,Condition,Random"
+		},
+		{
+			"name": "DefaultTransition",
+			"type": "int",
+			"case": "Switch,Random",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "DefaultTransition",
+			"type": "int",
+			"case": "Retreat DestroyOccupants SuppressOccupants ReceiveItem RemoveItem Trade StartQuest      ChangeFactionRelations SetFactionRelations ChangeCharacterRelations SetCharacterRelations OpenShipyard",
+			"minvalue": "1",
+			"maxvalue": "1000",
+			"alias": "Transition"
+		},
+		{
+			"name": "DefaultTransition",
+			"type": "int",
+			"case": "AttackFleet,AttackOccupants",
+			"alias": "VictoryTransition",
+			"minvalue": "1",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "FailureTransition",
+			"type": "int",
+			"case": "AttackFleet,AttackOccupants",
+			"minvalue": "1",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Enemy",
+			"type": "object",
+			"typeid": "Fleet",
+			"case": "ShowDialog,AttackFleet"
+		},
+		{
+			"name": "Loot",
+			"type": "object",
+			"typeid": "Loot",
+			"case": "ShowDialog,ReceiveItem,RemoveItem,Trade,AttackFleet"
+		},
+		{
+			"name": "Quest",
+			"type": "object",
+			"typeid": "Quest",
+			"case": "StartQuest"
+		},
+		{
+			"name": "Character",
+			"type": "object",
+			"typeid": "Character",
+			"case": "ShowDialog,ChangeCharacterRelations,SetCharacterRelations"
+		},
+		{
+			"name": "Faction",
+			"type": "object",
+			"typeid": "Faction",
+			"case": "OpenShipyard"
+		},
+		{
+			"name": "Value",
+			"type": "int",
+			"case": "ChangeCharacterRelations,ChangeFactionRelations,SetCharacterRelations,SetFactionRelations",
+			"minvalue": "-100",
+			"maxvalue": "100"
+		},
+		{
+			"name": "Value",
+			"type": "int",
+			"case": "OpenShipyard",
+			"minvalue": "0",
+			"maxvalue": "10000",
+			"alias": "Level"
+		},
+		{
+			"name": "Actions",
+			"type": "struct_list",
+			"typeid": "NodeAction",
+			"case": "ShowDialog"
+		},
+		{
+			"name": "Transitions",
+			"type": "struct_list",
+			"typeid": "NodeTransition",
+			"case": "Switch,Random,Condition"
+		}
+	]
+}

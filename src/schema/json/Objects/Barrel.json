@@ -1,0 +1,54 @@
+{
+	"name": "Barrel",
+	"type": "struct",
+	"member": [
+		{
+			"name": "Position",
+			"type": "vector"
+		},
+		{
+			"name": "Rotation",
+			"type": "float",
+			"minvalue": "-360",
+			"maxvalue": "360"
+		},
+		{
+			"name": "Offset",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1"
+		},
+		{
+			"name": "PlatformType",
+			"type": "enum",
+			"typeid": "PlatformType"
+		},
+		{
+			"name": "AutoAimingArc",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "360"
+		},
+		{
+			"name": "RotationSpeed",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "WeaponClass",
+			"type": "string"
+		},
+		{
+			"name": "Image",
+			"type": "image",
+			"typeid": "Satellite"
+		},
+		{
+			"name": "Size",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "100"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"name": "VisualEffect",
+	"type": "object",
+	"typeid": "VisualEffect",
+	"member": {
+		"name": "Elements",
+		"type": "struct_list",
+		"typeid": "VisualEffectElement"
+	}
+}

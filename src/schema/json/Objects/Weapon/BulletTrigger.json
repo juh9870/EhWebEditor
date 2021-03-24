@@ -1,0 +1,94 @@
+{
+	"name": "BulletTrigger",
+	"type": "struct",
+	"switch": "EffectType",
+	"member": [
+		{
+			"name": "Condition",
+			"type": "enum",
+			"typeid": "BulletTriggerCondition"
+		},
+		{
+			"name": "EffectType",
+			"type": "enum",
+			"typeid": "BulletEffectType"
+		},
+		{
+			"name": "VisualEffect",
+			"type": "object",
+			"typeid": "VisualEffect",
+			"case": "PlaySfx"
+		},
+		{
+			"name": "AudioClip",
+			"type": "audioclip",
+			"case": "PlaySfx,SpawnBullet"
+		},
+		{
+			"name": "Ammunition",
+			"type": "object",
+			"typeid": "Ammunition",
+			"case": "SpawnBullet"
+		},
+		{
+			"name": "Color",
+			"type": "color",
+			"case": "PlaySfx,SpawnBullet"
+		},
+		{
+			"name": "ColorMode",
+			"type": "enum",
+			"typeid": "ColorMode",
+			"case": "PlaySfx,SpawnBullet"
+		},
+		{
+			"name": "Quantity",
+			"type": "int",
+			"minvalue": "0",
+			"maxvalue": "1000",
+			"case": "SpawnBullet"
+		},
+		{
+			"name": "Size",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "100",
+			"case": "PlaySfx,SpawnBullet"
+		},
+		{
+			"name": "Lifetime",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000",
+			"case": "PlaySfx"
+		},
+		{
+			"name": "Cooldown",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000",
+			"case": "SpawnBullet"
+		},
+		{
+			"name": "RandomFactor",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1",
+			"case": "SpawnBullet"
+		},
+		{
+			"name": "PowerMultiplier",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000",
+			"case": "SpawnBullet"
+		},
+		{
+			"name": "MaxNestingLevel",
+			"type": "int",
+			"minvalue": "0",
+			"maxvalue": "100",
+			"case": "SpawnBullet"
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"name": "BulletPrefab",
+	"type": "object",
+	"typeid": "BulletPrefab",
+	"member": [
+		{
+			"name": "Shape",
+			"type": "enum",
+			"typeid": "BulletShape"
+		},
+		{
+			"name": "Image",
+			"type": "image",
+			"typeid": "Ammunition"
+		},
+		{
+			"name": "Size",
+			"type": "float",
+			"minvalue": "0.01",
+			"maxvalue": "100"
+		},
+		{
+			"name": "Margins",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1"
+		},
+		{
+			"name": "MainColor",
+			"type": "color"
+		},
+		{
+			"name": "MainColorMode",
+			"type": "enum",
+			"typeid": "ColorMode"
+		},
+		{
+			"name": "SecondColor",
+			"type": "color"
+		},
+		{
+			"name": "SecondColorMode",
+			"type": "enum",
+			"typeid": "ColorMode"
+		}
+	]
+}

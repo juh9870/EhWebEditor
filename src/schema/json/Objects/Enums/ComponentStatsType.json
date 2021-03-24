@@ -1,0 +1,14 @@
+{
+	"type": "enum",
+	"name": "ComponentStatsType",
+	"item": [
+		{
+			"text": 0,
+			"name": "PerComponent"
+		},
+		{
+			"text": 1,
+			"name": "PerOneCell"
+		}
+	]
+}

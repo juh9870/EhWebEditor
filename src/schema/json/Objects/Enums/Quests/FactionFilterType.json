@@ -1,0 +1,22 @@
+{
+	"type": "enum",
+	"name": "FactionFilterType",
+	"item": [
+		{
+			"text": 0,
+			"name": "AllButList"
+		},
+		{
+			"text": 1,
+			"name": "ListOnly"
+		},
+		{
+			"text": 2,
+			"name": "StarOwnersAndList"
+		},
+		{
+			"text": 3,
+			"name": "AllAvailable"
+		}
+	]
+}

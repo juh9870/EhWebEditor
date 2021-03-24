@@ -1,0 +1,18 @@
+{
+	"type": "enum",
+	"name": "RewardCondition",
+	"item": [
+		{
+			"text": 0,
+			"name": "Default"
+		},
+		{
+			"text": 1,
+			"name": "Always"
+		},
+		{
+			"text": 2,
+			"name": "Never"
+		}
+	]
+}

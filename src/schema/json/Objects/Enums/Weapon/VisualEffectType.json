@@ -1,0 +1,24 @@
+{
+	"type": "enum",
+	"name": "VisualEffectType",
+	"item": [
+		{
+			"name": "Flash"
+		},
+		{
+			"name": "FlashAdditive"
+		},
+		{
+			"name": "Shockwave"
+		},
+		{
+			"name": "Smoke"
+		},
+		{
+			"name": "SmokeAdditive"
+		},
+		{
+			"name": "Shake"
+		}
+	]
+}

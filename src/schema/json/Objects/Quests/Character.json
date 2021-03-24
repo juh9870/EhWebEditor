@@ -1,0 +1,41 @@
+{
+	"name": "Character",
+	"type": "object",
+	"typeid": "Character",
+	"member": [
+		{
+			"name": "Name",
+			"type": "string"
+		},
+		{
+			"name": "AvatarIcon",
+			"type": "image",
+			"typeid": "AvatarIcon"
+		},
+		{
+			"name": "Faction",
+			"type": "object",
+			"typeid": "Faction"
+		},
+		{
+			"name": "Inventory",
+			"type": "object",
+			"typeid": "Loot"
+		},
+		{
+			"name": "Fleet",
+			"type": "object",
+			"typeid": "Fleet"
+		},
+		{
+			"name": "Relations",
+			"type": "int",
+			"minvalue": "-100",
+			"maxvalue": "100"
+		},
+		{
+			"name": "IsUnique",
+			"type": "bool"
+		}
+	]
+}

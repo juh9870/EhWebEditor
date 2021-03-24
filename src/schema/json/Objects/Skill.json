@@ -1,0 +1,50 @@
+{
+	"name": "Skill",
+	"type": "object",
+	"typeid": "Skill",
+	"member": [
+		{
+			"name": "Name",
+			"type": "string"
+		},
+		{
+			"name": "Icon",
+			"type": "image",
+			"typeid": "SkillIcon"
+		},
+		{
+			"name": "Description",
+			"type": "string"
+		},
+		{
+			"name": "BaseRequirement",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "100"
+		},
+		{
+			"name": "RequirementPerLevel",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "100"
+		},
+		{
+			"name": "BasePrice",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "100"
+		},
+		{
+			"name": "PricePerLevel",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "100"
+		},
+		{
+			"name": "MaxLevel",
+			"type": "int",
+			"minvalue": "1",
+			"maxvalue": "1000"
+		}
+	]
+}

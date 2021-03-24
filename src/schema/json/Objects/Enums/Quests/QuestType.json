@@ -1,0 +1,22 @@
+{
+	"type": "enum",
+	"name": "QuestType",
+	"item": [
+		{
+			"text": 0,
+			"name": "Common"
+		},
+		{
+			"text": 1,
+			"name": "Singleton"
+		},
+		{
+			"text": 2,
+			"name": "Storyline"
+		},
+		{
+			"text": 3,
+			"name": "Temporary"
+		}
+	]
+}

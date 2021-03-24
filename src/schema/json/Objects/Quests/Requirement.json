@@ -1,0 +1,93 @@
+{
+	"name": "Requirement",
+	"type": "struct",
+	"switch": "Type",
+	"member": [
+		{
+			"name": "Type",
+			"type": "enum",
+			"typeid": "RequirementType"
+		},
+		{
+			"name": "ItemId",
+			"type": "object",
+			"case": "HaveItemById",
+			"typeid": "Loot",
+			"alias": "Loot"
+		},
+		{
+			"name": "ItemId",
+			"type": "object",
+			"case": "HaveQuestItem",
+			"typeid": "QuestItem",
+			"alias": "QuestItem"
+		},
+		{
+			"name": "ItemId",
+			"type": "object",
+			"case": "QuestCompleted,QuestActive",
+			"typeid": "Quest",
+			"alias": "Quest"
+		},
+		{
+			"name": "MinValue",
+			"type": "int",
+			"case": "PlayerPosition,RandomStarSystem",
+			"minvalue": "0",
+			"maxvalue": "10000"
+		},
+		{
+			"name": "MaxValue",
+			"type": "int",
+			"case": "PlayerPosition,RandomStarSystem",
+			"minvalue": "0",
+			"maxvalue": "10000"
+		},
+		{
+			"name": "MinValue",
+			"type": "int",
+			"case": "CharacterRelations,FactionRelations",
+			"minvalue": "-100",
+			"maxvalue": "100"
+		},
+		{
+			"name": "MaxValue",
+			"type": "int",
+			"case": "CharacterRelations,FactionRelations",
+			"minvalue": "-100",
+			"maxvalue": "100"
+		},
+		{
+			"name": "MinValue",
+			"type": "int",
+			"case": "HaveQuestItem",
+			"minvalue": "1",
+			"maxvalue": "1000000",
+			"alias": "Amount"
+		},
+		{
+			"name": "Character",
+			"type": "object",
+			"typeid": "Character",
+			"case": "CharacterRelations"
+		},
+		{
+			"name": "Faction",
+			"type": "object",
+			"typeid": "Faction",
+			"case": "Faction"
+		},
+		{
+			"name": "Loot",
+			"type": "struct",
+			"typeid": "LootContent",
+			"case": "HaveItem"
+		},
+		{
+			"name": "Requirements",
+			"type": "struct_list",
+			"typeid": "Requirement",
+			"case": "All,Any,None"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"type": "enum",
+	"name": "BulletTriggerCondition",
+	"item": [
+		{
+			"name": "Undefined"
+		},
+		{
+			"name": "Created"
+		},
+		{
+			"name": "Destroyed"
+		},
+		{
+			"name": "Hit"
+		},
+		{
+			"name": "Disarmed"
+		},
+		{
+			"name": "Expired"
+		},
+		{
+			"name": "Detonated"
+		},
+		{
+			"name": "OutOfAmmo"
+		}
+	]
+}

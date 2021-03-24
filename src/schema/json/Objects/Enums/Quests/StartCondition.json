@@ -1,0 +1,34 @@
+{
+	"type": "enum",
+	"name": "StartCondition",
+	"item": [
+		{
+			"text": 0,
+			"name": "Manual"
+		},
+		{
+			"text": 1,
+			"name": "Beacon"
+		},
+		{
+			"text": 2,
+			"name": "LocalEncounter"
+		},
+		{
+			"text": 3,
+			"name": "FactionMission"
+		},
+		{
+			"text": 4,
+			"name": "GameStart"
+		},
+		{
+			"text": 5,
+			"name": "NewStarExplored"
+		},
+		{
+			"text": 6,
+			"name": "ArrivedAtStar"
+		}
+	]
+}

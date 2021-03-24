@@ -1,0 +1,27 @@
+{
+	"type": "enum",
+	"name": "ComponentCategory",
+	"item": [
+		{
+			"name": "Undefined"
+		},
+		{
+			"name": "Weapon"
+		},
+		{
+			"name": "Defense"
+		},
+		{
+			"name": "Energy"
+		},
+		{
+			"name": "Engine"
+		},
+		{
+			"name": "Drones"
+		},
+		{
+			"name": "Special"
+		}
+	]
+}

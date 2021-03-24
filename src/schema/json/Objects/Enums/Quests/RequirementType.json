@@ -1,0 +1,70 @@
+{
+	"type": "enum",
+	"name": "RequirementType",
+	"item": [
+		{
+			"text": 0,
+			"name": "Empty"
+		},
+		{
+			"text": 1,
+			"name": "Any"
+		},
+		{
+			"text": 2,
+			"name": "All"
+		},
+		{
+			"text": 3,
+			"name": "None"
+		},
+		{
+			"text": 6,
+			"name": "PlayerPosition"
+		},
+		{
+			"text": 7,
+			"name": "RandomStarSystem"
+		},
+		{
+			"text": 8,
+			"name": "AggressiveOccupants"
+		},
+		{
+			"text": 9,
+			"name": "QuestCompleted"
+		},
+		{
+			"text": 10,
+			"name": "QuestActive"
+		},
+		{
+			"text": 15,
+			"name": "CharacterRelations"
+		},
+		{
+			"text": 16,
+			"name": "FactionRelations"
+		},
+		{
+			"text": 20,
+			"name": "Faction"
+		},
+		{
+			"text": 25,
+			"name": "HaveQuestItem"
+		},
+		{
+			"text": 26,
+			"name": "HaveItem"
+		},
+		{
+			"text": 27,
+			"name": "HaveItemById"
+		},
+		{
+			"text": 30,
+			"name": "ComeBack"
+		}
+	]
+}

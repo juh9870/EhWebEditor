@@ -1,0 +1,15 @@
+{
+	"name": "LootItem",
+	"type": "struct",
+	"member": [
+		{
+			"name": "Weight",
+			"type": "float"
+		},
+		{
+			"name": "Loot",
+			"type": "struct",
+			"typeid": "LootContent"
+		}
+	]
+}

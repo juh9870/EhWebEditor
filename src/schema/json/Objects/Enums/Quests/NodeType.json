@@ -1,0 +1,98 @@
+{
+	"type": "enum",
+	"name": "NodeType",
+	"item": [
+		{
+			"text": 0,
+			"name": "Undefined"
+		},
+		{
+			"text": 1,
+			"name": "ComingSoon"
+		},
+		{
+			"text": 10,
+			"name": "ShowDialog"
+		},
+		{
+			"text": 11,
+			"name": "OpenShipyard"
+		},
+		{
+			"text": 15,
+			"name": "Switch"
+		},
+		{
+			"text": 16,
+			"name": "Random"
+		},
+		{
+			"text": 17,
+			"name": "Condition"
+		},
+		{
+			"text": 20,
+			"name": "AttackFleet"
+		},
+		{
+			"text": 21,
+			"name": "AttackOccupants"
+		},
+		{
+			"text": 25,
+			"name": "DestroyOccupants"
+		},
+		{
+			"text": 26,
+			"name": "SuppressOccupants"
+		},
+		{
+			"text": 30,
+			"name": "Retreat"
+		},
+		{
+			"text": 35,
+			"name": "ReceiveItem"
+		},
+		{
+			"text": 36,
+			"name": "RemoveItem"
+		},
+		{
+			"text": 37,
+			"name": "Trade"
+		},
+		{
+			"text": 40,
+			"name": "CompleteQuest"
+		},
+		{
+			"text": 41,
+			"name": "FailQuest"
+		},
+		{
+			"text": 42,
+			"name": "CancelQuest"
+		},
+		{
+			"text": 43,
+			"name": "StartQuest"
+		},
+		{
+			"text": 50,
+			"name": "SetCharacterRelations"
+		},
+		{
+			"text": 51,
+			"name": "SetFactionRelations"
+		},
+		{
+			"text": 55,
+			"name": "ChangeCharacterRelations"
+		},
+		{
+			"text": 56,
+			"name": "ChangeFactionRelations"
+		}
+	]
+}

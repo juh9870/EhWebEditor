@@ -1,0 +1,112 @@
+{
+	"name": "Component",
+	"type": "object",
+	"typeid": "Component",
+	"member": [
+		{
+			"name": "Name",
+			"type": "string"
+		},
+		{
+			"name": "Description",
+			"type": "string"
+		},
+		{
+			"name": "DisplayCategory",
+			"type": "enum",
+			"typeid": "ComponentCategory"
+		},
+		{
+			"name": "Availability",
+			"type": "enum",
+			"typeid": "Availability"
+		},
+		{
+			"name": "ComponentStatsId",
+			"type": "object",
+			"typeid": "ComponentStats",
+			"alias": "Stats",
+			"options": "notnull"
+		},
+		{
+			"name": "Faction",
+			"type": "object",
+			"typeid": "Faction"
+		},
+		{
+			"name": "Level",
+			"type": "int",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Icon",
+			"type": "image",
+			"typeid": "Component"
+		},
+		{
+			"name": "Color",
+			"type": "color"
+		},
+		{
+			"name": "Layout",
+			"type": "layout"
+		},
+		{
+			"name": "CellType",
+			"type": "string",
+			"options": "obsolete"
+		},
+		{
+			"name": "DeviceId",
+			"type": "object",
+			"typeid": "Device",
+			"alias": "Device"
+		},
+		{
+			"name": "WeaponId",
+			"type": "object",
+			"typeid": "Weapon",
+			"alias": "Weapon"
+		},
+		{
+			"name": "AmmunitionId",
+			"type": "object",
+			"typeid": "Ammunition",
+			"alias": "Ammunition"
+		},
+		{
+			"name": "AmmunitionId",
+			"type": "object",
+			"typeid": "AmmunitionObsolete",
+			"alias": "AmmunitionObsolete"
+		},
+		{
+			"name": "WeaponSlotType",
+			"type": "string",
+			"options": "obsolete"
+		},
+		{
+			"name": "DroneBayId",
+			"type": "object",
+			"typeid": "DroneBay",
+			"alias": "DroneBay"
+		},
+		{
+			"name": "DroneId",
+			"type": "object",
+			"typeid": "ShipBuild",
+			"alias": "Drone"
+		},
+		{
+			"name": "Restrictions",
+			"type": "struct",
+			"typeid": "ComponentRestrictions"
+		},
+		{
+			"name": "PossibleModifications",
+			"type": "object_list",
+			"typeid": "ComponentMod"
+		}
+	]
+}

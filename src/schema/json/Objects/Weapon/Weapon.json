@@ -1,0 +1,54 @@
+{
+	"name": "Weapon",
+	"type": "object",
+	"typeid": "Weapon",
+	"options": "legacy",
+	"member": [
+		{
+			"name": "WeaponClass",
+			"type": "enum",
+			"typeid": "WeaponClass"
+		},
+		{
+			"name": "FireRate",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "100"
+		},
+		{
+			"name": "Spread",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "360"
+		},
+		{
+			"name": "Magazine",
+			"type": "int",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "ActivationType",
+			"type": "enum",
+			"typeid": "ActivationType"
+		},
+		{
+			"name": "ShotSound",
+			"type": "audioclip"
+		},
+		{
+			"name": "ChargeSound",
+			"type": "audioclip"
+		},
+		{
+			"name": "ShotEffectPrefab",
+			"type": "prefab",
+			"typeid": "Effect"
+		},
+		{
+			"name": "ControlButtonIcon",
+			"type": "image",
+			"typeid": "ActionButton"
+		}
+	]
+}

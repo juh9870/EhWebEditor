@@ -1,0 +1,43 @@
+{
+	"name": "VisualEffectElement",
+	"type": "struct",
+	"member": [
+		{
+			"name": "Type",
+			"type": "enum",
+			"typeid": "VisualEffectType"
+		},
+		{
+			"name": "Image",
+			"type": "image",
+			"typeid": "Effect"
+		},
+		{
+			"name": "ColorMode",
+			"type": "enum",
+			"typeid": "ColorMode"
+		},
+		{
+			"name": "Color",
+			"type": "color"
+		},
+		{
+			"name": "Size",
+			"type": "float",
+			"minvalue": "0.001",
+			"maxvalue": "100"
+		},
+		{
+			"name": "StartTime",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Lifetime",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "1000"
+		}
+	]
+}

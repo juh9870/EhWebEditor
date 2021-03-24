@@ -1,0 +1,30 @@
+{
+	"type": "enum",
+	"name": "ModificationQuality",
+	"item": [
+		{
+			"text": 0,
+			"name": "N3"
+		},
+		{
+			"text": 1,
+			"name": "N2"
+		},
+		{
+			"text": 2,
+			"name": "N1"
+		},
+		{
+			"text": 3,
+			"name": "P1"
+		},
+		{
+			"text": 4,
+			"name": "P2"
+		},
+		{
+			"text": 5,
+			"name": "P3"
+		}
+	]
+}

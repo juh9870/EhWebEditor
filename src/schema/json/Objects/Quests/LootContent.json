@@ -1,0 +1,77 @@
+{
+	"name": "LootContent",
+	"type": "struct",
+	"switch": "Type",
+	"member": [
+		{
+			"name": "Type",
+			"type": "enum",
+			"typeid": "LootItemType"
+		},
+		{
+			"name": "ItemId",
+			"type": "object",
+			"typeid": "QuestItem",
+			"case": "QuestItem",
+			"alias": "QuestItem",
+			"options": "notnull"
+		},
+		{
+			"name": "ItemId",
+			"type": "object",
+			"typeid": "Ship",
+			"case": "EmptyShip",
+			"alias": "Ship",
+			"options": "notnull"
+		},
+		{
+			"name": "ItemId",
+			"type": "object",
+			"typeid": "ShipBuild",
+			"case": "Ship",
+			"alias": "ShipBuild",
+			"options": "notnull"
+		},
+		{
+			"name": "ItemId",
+			"type": "object",
+			"typeid": "Component",
+			"case": "Component",
+			"alias": "Component",
+			"options": "notnull"
+		},
+		{
+			"name": "MinAmount",
+			"type": "int",
+			"case": "Money,Fuel,Stars,RandomComponents,     RandomItems,QuestItem,Component",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "MaxAmount",
+			"type": "int",
+			"case": "Money,Fuel,Stars,RandomComponents,     RandomItems,QuestItem,Component",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "ValueRatio",
+			"type": "float",
+			"case": "SomeMoney,RandomComponents",
+			"minvalue": "0.001",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "Factions",
+			"type": "struct",
+			"typeid": "FactionFilter",
+			"case": "RandomComponents"
+		},
+		{
+			"name": "Items",
+			"type": "struct_list",
+			"typeid": "LootItem",
+			"case": "RandomItems,AllItems,ItemsWithChance"
+		}
+	]
+}

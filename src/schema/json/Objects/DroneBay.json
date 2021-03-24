@@ -1,0 +1,73 @@
+{
+	"name": "DroneBay",
+	"type": "object",
+	"typeid": "DroneBay",
+	"options": "legacy",
+	"member": [
+		{
+			"name": "EnergyConsumption",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "PassiveEnergyConsumption",
+			"type": "float",
+			"minvalue": "0",
+			"maxvalue": "999999999"
+		},
+		{
+			"name": "Range",
+			"type": "float",
+			"minvalue": "1",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "DamageMultiplier",
+			"type": "float",
+			"minvalue": "0.01",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "DefenseMultiplier",
+			"type": "float",
+			"minvalue": "0.01",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "SpeedMultiplier",
+			"type": "float",
+			"minvalue": "0.01",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "ImprovedAi",
+			"type": "bool"
+		},
+		{
+			"name": "Capacity",
+			"type": "int",
+			"minvalue": "1",
+			"maxvalue": "1000"
+		},
+		{
+			"name": "ActivationType",
+			"type": "enum",
+			"typeid": "ActivationType"
+		},
+		{
+			"name": "LaunchSound",
+			"type": "audioclip"
+		},
+		{
+			"name": "LaunchEffectPrefab",
+			"type": "prefab",
+			"typeid": "Effect"
+		},
+		{
+			"name": "ControlButtonIcon",
+			"type": "image",
+			"typeid": "ActionButton"
+		}
+	]
+}

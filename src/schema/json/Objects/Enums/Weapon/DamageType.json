@@ -1,0 +1,18 @@
+{
+	"type": "enum",
+	"name": "DamageType",
+	"item": [
+		{
+			"name": "Impact"
+		},
+		{
+			"name": "Energy"
+		},
+		{
+			"name": "Heat"
+		},
+		{
+			"name": "Direct"
+		}
+	]
+}

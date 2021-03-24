@@ -1,0 +1,33 @@
+{
+	"name": "ShipBuild",
+	"type": "object",
+	"typeid": "ShipBuild",
+	"member": [
+		{
+			"name": "ShipId",
+			"type": "object",
+			"typeid": "Ship",
+			"alias": "Ship",
+			"options": "notnull"
+		},
+		{
+			"name": "NotAvailableInGame",
+			"type": "bool"
+		},
+		{
+			"name": "DifficultyClass",
+			"type": "enum",
+			"typeid": "DifficultyClass"
+		},
+		{
+			"name": "BuildFaction",
+			"type": "object",
+			"typeid": "Faction"
+		},
+		{
+			"name": "Components",
+			"type": "struct_list",
+			"typeid": "InstalledComponent"
+		}
+	]
+}

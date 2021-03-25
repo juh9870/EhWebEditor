@@ -136,7 +136,7 @@ export class TreeTab {
                 if (!await TreeTab.database.tryApplyChanges(prevData, curData, this.files)) {
                     return;
                 }
-                let curDataStr = JSON.stringify(curData);
+                let curDataStr = JSON.stringify(curData,null,"\t");
                 await TreeTab.files.writeFile(curPath, curDataStr);
             }
         } catch (e) {

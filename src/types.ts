@@ -30,7 +30,7 @@ export enum ItemType {
     "GalaxySettings" = 101,
     "DatabaseSettings" = 102,
     "ExplorationSettings" = 103,
-};
+}
 
 export const ItemTypesMap = Object.freeze({
     "Undefined": 0,
@@ -60,7 +60,7 @@ export const ItemTypesMap = Object.freeze({
     "GalaxySettings": 101,
     "DatabaseSettings": 102,
     "ExplorationSettings": 103,
-} as StringMap<number>);
+} as StringMap<ItemType>);
 
 export const ItemTypesMapRev = Object.freeze({
     0: "Undefined",

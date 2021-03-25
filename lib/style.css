@@ -1,4 +1,4 @@
-td {
+td > * {
     height: 100%;
     background: #4B515D;
     color: #ccc;
@@ -6,10 +6,18 @@ td {
 
 input[type="text"],
 input[type="button"],
+input[type="search"],
 input[type="file"]::-webkit-file-upload-button,
 button, select {
     background-color: #3E4551;
-    color: #ccc
+    color: #ccc !important;
+}
+
+input[type="text"], input[type="search"], select {
+    border-width: 2px !important;
+    border-style: inset !important;
+    border-radius: 0 !important;
+    border-color: rgb(118 118 118) !important;
 }
 
 body {
@@ -25,11 +33,11 @@ div {
     border-color: #212121 !important;
 }
 
-.jstree-wholerow-hovered {
+.jstree-wholerow-hovered, .select2-results__option--highlighted {
     background: #212121 !important;
 }
 
-.jstree-wholerow-clicked {
+.jstree-wholerow-clicked, .select2-results__option--selected {
     background: #1C2331 !important;
 }
 
@@ -46,10 +54,97 @@ html {
     height: 100%;
 }
 
-*[data-schematype='string'] input {
-    width: 99%;
+*[data-schematype] input {
+    width: 98.8%;
+}
+
+*[data-schematype] select {
+    width: 100%;
 }
 
 td {
     vertical-align: top;
+}
+
+.select2-container, .select2-selection, select2-selection__rendered {
+    background-color: #3e4551 !important;
+    color: #ccc !important;
+}
+
+.select2-dropdown {
+    background-color: #4b515d !important;
+    color: #ccc !important;
+}
+
+.select2-selection--single {
+    border: 0 !important;
+}
+
+.select2-container {
+    border-width: 2px;
+    border-style: inset;
+    border-radius: 0;
+    border-color: rgb(118 118 118);
+}
+
+.row span.select2-container {
+    width: 100% !important;
+}
+
+.select2-container * {
+    color: #ccc !important;
+    border-radius: 0 !important;
+}
+
+.select2-search::before {
+    content: "Search: ";
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-width: 2px;
+    border-style: outset;
+    border-radius: 0;
+    border-color: rgb(118 118 118);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4b515d;
+}
+
+::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 0;
+}
+
+.je-indented-panel, div[data-schemaid], #treeHolder {
+    padding: 0.5em;
+    border-width: 3px !important;
+    border-style: outset !important;
+    border-radius: 0 !important;
+    border-color: rgb(118 118 118) !important;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.r2 {
+    margin-top: 0.5em;
+}
+
+#tree-search {
+    width:100%;
+    padding: 0.2em;
+    font-size:large
+}
+
+::-webkit-search-cancel-button {
+    filter: contrast(0%) brightness(1.6);
+    cursor:pointer;
 }

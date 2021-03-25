@@ -1,9 +1,10 @@
-import {DatabaseFile, FileEntry, ItemTypesMap, ItemTypesMapRev, NumberMap} from "./types";
-import {values} from "./utils";
+import {DatabaseFile, FileEntry, ItemType, ItemTypesMap, ItemTypesMapRev, NumberMap} from "./types";
+import {keys, values} from "./utils";
 
 export type DatabaseFileEntry = FileEntry & DatabaseFile
 
 export class Database {
+    public static deleteNumber = 2 ** 32 - 9870;
     public mappings: NumberMap<NumberMap<DatabaseFileEntry>> = {};
     public errors:string[];
     public constructor() {
@@ -53,5 +54,9 @@ export class Database {
             }
         }
         return true;
+    }
+
+    public getIds(type:ItemType):number[]{
+        return keys(this.mappings[type]).map(e=>Number(e));
     }
 }

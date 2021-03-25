@@ -2,14 +2,22 @@ import * as $ from "jquery";
 import {DatabaseFile, ItemType, ItemTypesMap, NumberMap} from "../types";
 import {schemaForType} from "../schema/schema";
 import {clone, values} from "../utils";
+import {Database} from "../database";
 
-// const JSONEditor = require("@json-editor/json-editor").JSONEditor;
+require("select2");
+
+const JSONEditor = require("@json-editor/json-editor").JSONEditor;
 // declare global {
 //     const JSONEditor:any;
 // }
+
 let swr = (obj: any, r: boolean) => {
     for (let key of Object.getOwnPropertyNames(obj)) {
         let val = obj[key];
+        if (r && (key.startsWith("$") || val === Database.deleteNumber)) {
+            delete obj[key];
+            continue;
+        }
         if (typeof val === "string") {
             if (val.match(/^#[0-9a-fA-F]{8}$/)) {
                 let split = val.match(/[0-9a-fA-F]{2}/g) as string[];
@@ -27,14 +35,35 @@ let swr = (obj: any, r: boolean) => {
     return obj;
 }
 
-let editors: NumberMap<JSONEditor> = {};
+let editors: NumberMap<JSONEditor> = (window as any).editors = {};
 let holders: NumberMap<JQuery<HTMLElement>> = {};
 let current: ItemType = ItemType.Undefined;
 let curData: object;
+let database: Database;
+let root: JQuery<HTMLElement>;
+
+// debugger;
+
+JSONEditor.defaults.callbacks.template = {}
+for (let type of values(ItemTypesMap)) {
+    let keyT = type + "_EnumTitleCB";
+    let keyV = type + "_EnumValueCB";
+
+    JSONEditor.defaults.callbacks.template[keyT] = (jseditor: any, e: any) => {
+        if(e.item===Database.deleteNumber)return "None"
+        return database.mappings[type][e.item].path;
+
+    };
+    JSONEditor.defaults.callbacks.template[keyV] = (jseditor: any, e: any) => {
+        return e.item;
+    };
+
+}
 
 export class EditorTab {
-    public static async init() {
-        let root = $("#contentHolder");
+    public static async init(_database: Database) {
+        database = _database;
+        root = $("#contentHolder");
 
         for (let editor of values(editors)) {
             editor.destroy();
@@ -43,22 +72,6 @@ export class EditorTab {
         root.empty();
 
         for (let type of values(ItemTypesMap)) {
-            let typeSchema = schemaForType(type);
-            let holder = $(`<div id="editor_holder" data-theme="html"></div>`);
-            root.append(holder);
-            holders[type] = holder;
-            editors[type] = new JSONEditor(holder[0], {
-                schema: typeSchema,
-                "template": "default",
-                "show_errors": "always",
-                "required_by_default": 1,
-                "show_opt_in": 1,
-                "disable_properties": 1,
-                "enable_array_copy": 1,
-                "disable_array_delete_all_rows": 1,
-                "disable_array_delete_last_row": 1,
-                "prompt_before_delete": 1
-            });
         }
         EditorTab.closeAll();
     }
@@ -71,12 +84,31 @@ export class EditorTab {
 
     public static close(type: ItemType) {
         // editors[type].disable();
-        holders[type].hide();
+        // holders[type].hide();
+        editors[type]?.destroy()
     }
 
     public static show(type: ItemType) {
         EditorTab.close(current);
         current = type;
+
+
+        let typeSchema = schemaForType(type, database);
+        let holder = $(`<div id="editor_holder" data-theme="html"></div>`);
+        root.append(holder);
+        holders[type] = holder;
+        editors[type] = new JSONEditor(holder[0], {
+            schema: typeSchema,
+            "template": "default",
+            "show_errors": "always",
+            "required_by_default": 1,
+            "show_opt_in": 1,
+            "disable_properties": 1,
+            "enable_array_copy": 1,
+            "disable_array_delete_all_rows": 1,
+            "disable_array_delete_last_row": 1,
+            "prompt_before_delete": 1
+        });
 
         // editors[type].enable();
         holders[type].show();
@@ -92,11 +124,15 @@ export class EditorTab {
         // let ev = new Event('change');
         // inp.dispatchEvent(ev);
         curData = swr(clone(data), false);
+        EditorTab.populateTech(curData);
         editors[current].setValue(curData);
     }
 
     public static getData() {
         let data = editors[current].getValue();
         return swr(clone(data), true);
+    }
+
+    private static populateTech(targ: any) {
     }
 }

@@ -17,7 +17,8 @@
     "rfdc": "latest",
     "jstree": "latest",
     "esmify": "latest",
-    "deep-equal": "latest"
+    "deep-equal": "latest",
+    "select2": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",
@@ -25,6 +26,7 @@
     "@types/fs-extra": "latest",
     "@types/downloadjs": "latest",
     "@types/jstree": "latest",
-    "@types/deep-equal": "latest"
+    "@types/deep-equal": "latest",
+    "@types/select2": "latest"
   }
 }

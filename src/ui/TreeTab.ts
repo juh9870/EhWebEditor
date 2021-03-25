@@ -11,17 +11,37 @@ let treeBase: JQuery
 let tree: JSTree;
 let curPath = "";
 let prevData: DatabaseFile;
-let eventLocked = false;
+let eventLocked: boolean;
 let to: any;
 let folderInput: JQuery<HTMLInputElement>;
 let saveButton: JQuery<HTMLInputElement>;
 let searchInput: JQuery<HTMLInputElement>;
+let ready = false;
+let cover: JQuery<HTMLElement>;
+
+let lockEvents = (text: string) => {
+    cover.find("div")[0].textContent=text;
+    if (eventLocked) {
+        return;
+    }
+    eventLocked = true;
+    cover.show(0.5);
+}
+
+let unlockEvents = () => {
+    if (!eventLocked) return;
+    eventLocked = false;
+    cover.hide(0.5);
+}
 
 export class TreeTab {
     private static files: Files;
     private static database: Database;
 
     public static init(files: Files, database: Database) {
+        cover = $(`<div class="cover"><div></div><div class="loader"></div></div>`);
+        $("body").append(cover);
+        lockEvents("Editor is starting");
         TreeTab.files = files;
         TreeTab.database = database;
         let holder = $("#treeHolder");
@@ -37,24 +57,29 @@ export class TreeTab {
         r1.append(saveButton);
         r2.append(searchLabel);
         r2.append(searchInput);
-        saveButton.prop("disabled",true);
-        searchInput.prop("disabled",true);
+        saveButton.prop("disabled", true);
+        searchInput.prop("disabled", true);
         treeBase = $(`<div></div>`);
         holder.append(treeBase);
-        holder.on("change", async (event) => {
+        folderInput.on("change", async (event) => {
             if (eventLocked) return;
-            eventLocked = true;
+            lockEvents("Loading database");
+            if (ready && prompt("Save before changing database?")) {
+                await TreeTab.saveDatabase();
+                lockEvents("Loading database");
+            }
+            await TreeTab.close();
             let _files = Array.from(folderInput[0].files as FileList);
             await TreeTab.files.init(_files);
             await TreeTab.redrawTree();
-            eventLocked = false;
+            ready = true;
+            unlockEvents();
         });
         saveButton.on('click', async () => {
             if (eventLocked) return;
-            eventLocked = true;
-            await TreeTab.save();
-            await TreeTab.files.save();
-            eventLocked = false;
+            lockEvents("Saving database (this might take some time on larger database)");
+            await TreeTab.saveDatabase();
+            unlockEvents();
         });
         searchInput.on('keyup', () => {
             if (!tree) return;
@@ -64,12 +89,21 @@ export class TreeTab {
                 tree.search(v);
             }, 250);
         });
+        unlockEvents();
+    }
+
+    public static async saveDatabase() {
+        lockEvents("Archiving database (this might take some time on larger database)");
+        await TreeTab.close();
+
+        lockEvents("Preparing download (if this step takes too long, something might b wrong with your device)");
+        await TreeTab.files.save();
     }
 
     public static async redrawTree() {
         if (tree) tree.destroy(false);
-        saveButton.prop("disabled",true);
-        searchInput.prop("disabled",true);
+        saveButton.prop("disabled", true);
+        searchInput.prop("disabled", true);
         tree = treeBase.jstree({
             core: {
                 data: await TreeTab.files.treeData(),
@@ -82,41 +116,51 @@ export class TreeTab {
                     max_children: 0
                 }
             },
-            search:{
-                show_only_matches:true,
-                show_only_matches_children:true
+            search: {
+                show_only_matches: true,
+                show_only_matches_children: true
             },
             plugins: ["search", "types", "wholerow"]
         } as JSTreeStaticDefaults).jstree(true);
         TreeTab.createEvents();
-        saveButton.prop("disabled",false);
-        searchInput.prop("disabled",false);
+        saveButton.prop("disabled", false);
+        searchInput.prop("disabled", false);
     }
 
     public static async save() {
-        if (!curPath.length) return;
-        let curData: DatabaseFile = EditorTab.getData();
+        try {
+            if (!curPath.length) return;
+            let curData: DatabaseFile = await EditorTab.getData();
 
-        if (!equal(curData, prevData, {strict: true})) {
-            if (!await TreeTab.database.tryApplyChanges(prevData, curData)) {
-                return;
+            if (!equal(curData, prevData, {strict: true})) {
+                if (!await TreeTab.database.tryApplyChanges(prevData, curData, this.files)) {
+                    return;
+                }
+                let curDataStr = JSON.stringify(curData);
+                await TreeTab.files.writeFile(curPath, curDataStr);
             }
-            let curDataStr = JSON.stringify(curData);
-            await TreeTab.files.writeFile(curPath, curDataStr);
+        } catch (e) {
+            return;
         }
+    }
+
+    public static async close() {
+        await TreeTab.save();
+        EditorTab.closeAll();
     }
 
     public static createEvents() {
         treeBase.on('changed.jstree', async function (e, data) {
             if (eventLocked) return;
             if (data?.node?.type !== "json") return;
-            eventLocked = true;
+            lockEvents("Saving current file.");
             await TreeTab.save();
             curPath = await TreeTab.files.getPathFromSelection(data.selected);
             let selected = await TreeTab.files.readFile(curPath);
             prevData = JSON.parse(selected);
+            lockEvents("Opening new file.");
             EditorTab.feedData(prevData);
-            eventLocked = false;
+            unlockEvents();
         });
     }
 }

@@ -538,7 +538,7 @@
 			},
 			{
 				"parent": "[circular]",
-				"name": "AmmunitionId",
+				"name": "AmmunitionIdObsolete",
 				"type": "object",
 				"typeid": "AmmunitionObsolete",
 				"minvalue": null,
@@ -1745,7 +1745,7 @@
 				"name": "BarrelId",
 				"type": "int",
 				"typeid": "",
-				"minvalue": 0,
+				"minvalue": -1,
 				"maxvalue": 255,
 				"alias": "",
 				"notnull": false,

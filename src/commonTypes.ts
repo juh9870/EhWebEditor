@@ -12,5 +12,7 @@ declare class JSONEditor {
     public editors:any
     public element:HTMLElement;
 
+    public on:(event:string,cb:()=>unknown)=>unknown;
+
     public static defaults: any;
 }

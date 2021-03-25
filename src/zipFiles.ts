@@ -111,7 +111,7 @@ export class ZipFiles extends Files {
         for (let entry of this.fs.entries) {
             if (this.hide.has(entry.id)) continue;
             if (!ZipFiles.isZipFileEntry(entry)) continue;
-            let path = (await this.getPathFromSelection(entry.id.toString())).replace(this.unchangedDir.name, "").replace(/\/\//g, "");
+            let path = (await this.getPathFromSelection(entry.id.toString()));
             ret.push({path: path, value: await entry.getText()});
         }
         return ret;

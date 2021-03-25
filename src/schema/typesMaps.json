@@ -1,0 +1,140 @@
+{
+	"CoupledAmmunitionId": 25,
+	"ComponentStatsId": 11,
+	"Faction": 14,
+	"DeviceId": 2,
+	"WeaponId": 3,
+	"AmmunitionId": 25,
+	"AmmunitionIdObsolete": 25,
+	"DroneBayId": 5,
+	"DroneId": 8,
+	"PossibleModifications": 12,
+	"OutpostShip": 6,
+	"TurretShip": 6,
+	"InfectedPlanetFaction": 14,
+	"HiveShipBuild": 8,
+	"AbandonedStarbaseFaction": 14,
+	"StartingShipBuilds": 8,
+	"ComponentId": 1,
+	"Inventory": 16,
+	"Fleet": 18,
+	"List": 14,
+	"SpecificShips": 8,
+	"ItemId": {
+		"LootContent": [
+			{
+				"type": 20,
+				"cases": [
+					25
+				],
+				"caseVar": "Type"
+			},
+			{
+				"type": 6,
+				"cases": [
+					30,
+					31
+				],
+				"caseVar": "Type"
+			},
+			{
+				"type": 8,
+				"cases": [
+					30
+				],
+				"caseVar": "Type"
+			},
+			{
+				"type": 6,
+				"cases": [
+					30,
+					31
+				],
+				"caseVar": "Type"
+			},
+			{
+				"type": 1,
+				"cases": [
+					35
+				],
+				"caseVar": "Type"
+			}
+		],
+		"Requirement": [
+			{
+				"type": 15,
+				"cases": [
+					9,
+					10
+				],
+				"caseVar": "Type"
+			},
+			{
+				"type": 15,
+				"cases": [
+					9,
+					10
+				],
+				"caseVar": "Type"
+			},
+			{
+				"type": 20,
+				"cases": [
+					25
+				],
+				"caseVar": "Type"
+			},
+			{
+				"type": 16,
+				"cases": [
+					26,
+					27
+				],
+				"caseVar": "Type"
+			},
+			{
+				"type": 16,
+				"cases": [
+					26,
+					27
+				],
+				"caseVar": "Type"
+			}
+		],
+		"Technology": [
+			{
+				"type": 1,
+				"cases": [
+					0
+				],
+				"caseVar": "Type"
+			},
+			{
+				"type": 6,
+				"cases": [
+					1
+				],
+				"caseVar": "Type"
+			},
+			{
+				"type": 7,
+				"cases": [
+					2
+				],
+				"caseVar": "Type"
+			}
+		]
+	},
+	"Enemy": 18,
+	"Loot": 16,
+	"Character": 19,
+	"Quest": 15,
+	"SatelliteId": 7,
+	"BuiltinDevices": 2,
+	"ShipId": 6,
+	"BuildFaction": 14,
+	"Dependencies": 10,
+	"BulletPrefab": 27,
+	"VisualEffect": 26,
+	"Ammunition": 25
+}

@@ -4,6 +4,9 @@ const fs = require("fs-extra");
 const path = require('path');
 const parser = require('fast-xml-parser');
 
+
+let objectsMaps = {};
+
 const getCircularReplacer = () => {
     const seen = new WeakSet();
     return (key, value) => {
@@ -245,6 +248,9 @@ class DbObjectMember {
                     throw new Error("Unknown object field " + key);
             }
         }
+        if(this.alias==="AmmunitionObsolete"){
+            this.name="AmmunitionIdObsolete";
+        }
         if (this.minvalue !== null) this.minvalue = Number(this.minvalue);
         if (this.maxvalue !== null) this.maxvalue = Number(this.maxvalue);
     }
@@ -265,15 +271,38 @@ class DbObjectMember {
         switch (type) {
             case "object":
                 let type = typeIdToType(this.typeid);
+                (() => {
+                    let _type = type.value;
+                    if (_type === 4) {
+                        _type = 25;
+                    }
+                    let key = this.name;
+                    if (key === "ItemId") {
+                        let cases = enums[this.parent.member.find(e => e.name === this.parent.switch).typeid].entries.filter(e => this.case.includes(e.name)).map(e => e.value);
+                        let switchvar = this.parent.switch;
+                        objectsMaps[key] = objectsMaps[key] || {};
+                        objectsMaps[key][this.parent.name] = objectsMaps[key][this.parent.name] || [];
+                        objectsMaps[key][this.parent.name].push({
+                            type: _type,
+                            cases: cases,
+                            caseVar: switchvar
+                        });
+
+                    } else if (objectsMaps[key] && objectsMaps[key] !== _type) {
+                        debugger;
+                    } else {
+                        objectsMaps[key] = _type;
+                    }
+                })();
                 data.type = "integer"
                 data.options = {
                     itemType: type.value
                 };
-                data.format="select2";
+                data.format = "select2";
                 data.enumSource = [{
-                    "source": "$enumSource_"+type.value,
-                    "title": type.value+"_EnumTitleCB",
-                    "value": type.value+"_EnumValueCB"
+                    "source": "$enumSource_" + type.value,
+                    "title": type.value + "_EnumTitleCB",
+                    "value": type.value + "_EnumValueCB"
                 }]
                 break;
             case "struct":
@@ -499,8 +528,9 @@ delete schemaBase.oneOf;
 delete schemaBase.properties;
 
 let templ = fs.readFileSync("./schema.template.ts").toString();
-templ = templ.replace(/\$template\$/g,"").replace("{/*!!!SCHEMA!!!*/}", JSON.stringify(schemaBase, null, ""));
+templ = templ.replace(/\$template\$/g, "").replace("{/*!!!SCHEMA!!!*/}", JSON.stringify(schemaBase, null, ""));
 
 
 fs.outputFileSync("./schema.ts", templ);
+fs.outputFileSync("./typesMaps.json", JSON.stringify(objectsMaps,null,"\t"));
 //inspect(schemaBase);

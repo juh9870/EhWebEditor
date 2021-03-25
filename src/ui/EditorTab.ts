@@ -41,6 +41,8 @@ let current: ItemType = ItemType.Undefined;
 let curData: object;
 let database: Database;
 let root: JQuery<HTMLElement>;
+let ready=false;
+let readyAwaiters:((...args:any[])=>void)[] = []
 
 // debugger;
 
@@ -97,6 +99,7 @@ export class EditorTab {
         let holder = $(`<div id="editor_holder" data-theme="html"></div>`);
         root.append(holder);
         holders[type] = holder;
+        ready=false;
         editors[type] = new JSONEditor(holder[0], {
             schema: typeSchema,
             "template": "default",
@@ -109,8 +112,14 @@ export class EditorTab {
             "disable_array_delete_last_row": 1,
             "prompt_before_delete": 1
         });
+        editors[current].on("ready",()=> {
+            ready=true;
+            for (let readyAwaiter of readyAwaiters) {
+                readyAwaiter();
+            }
+        });
 
-        // editors[type].enable();
+            // editors[type].enable();
         holders[type].show();
     }
 
@@ -128,11 +137,32 @@ export class EditorTab {
         editors[current].setValue(curData);
     }
 
-    public static getData() {
+    public static async getData() {
+        await EditorTab.waitTillReady();
         let data = editors[current].getValue();
-        return swr(clone(data), true);
+        data=swr(clone(data), true)
+        EditorTab.depopulateTech(data);
+        return data as DatabaseFile;
+    }
+
+    private static waitTillReady(){
+        if(ready){
+            return Promise.resolve()
+        }
+        return new Promise((resolve,reject)=>{
+            readyAwaiters.push(resolve);
+        });
     }
 
     private static populateTech(targ: any) {
+        if(targ.ItemType==ItemType.Component){
+            targ.AmmunitionIdObsolete=targ.AmmunitionId;
+        }
+    }
+    private static depopulateTech(targ: any) {
+        if(targ.ItemType==ItemType.Component){
+            targ.AmmunitionId=targ.AmmunitionId??targ.AmmunitionIdObsolete;
+            delete targ.AmmunitionIdObsolete;
+        }
     }
 }

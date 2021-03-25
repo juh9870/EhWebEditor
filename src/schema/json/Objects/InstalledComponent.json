@@ -38,7 +38,7 @@
 		{
 			"name": "BarrelId",
 			"type": "int",
-			"minvalue": "0",
+			"minvalue": "-1",
 			"maxvalue": "255"
 		},
 		{
